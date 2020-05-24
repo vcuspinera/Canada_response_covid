@@ -15,11 +15,13 @@
     - [`rtweet`](https://docs.ropensci.org/rtweet/)
 
 ### Twitter accounts
-- [Canadian PM \[@CanadianPM\]](https://twitter.com/CanadianPM). (Joined May 2008). Official account of the Prime Minister of Canada.
-- [Canada \[@Canada\]](https://twitter.com/canada?lang=en). (Joined April 2014). Showcasing Canada to the world.
-- [Health Canada and PHAC \[@GovCanHealth\]](https://twitter.com/govcanhealth?lang=en). (Joined April 2009). Health Canada and Public Health Agency of Canada.
-- [Open Government CAN \[@OpenGovCan\]](https://twitter.com/opengovcan?lang=en). (Joined April 2014). Raising awareness and sparking dialogue about #GC #OpenGov efforts.
-- [Open Government CAN \[@OpenGovCan\]](https://twitter.com/opengovcan?lang=en). (Joined April 2014). Raising awareness and sparking dialogue about #GC #OpenGov efforts.
+- [@CanadianPM](https://twitter.com/CanadianPM). Official account of the Prime Minister of Canada.
+- [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world.
+- [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada.
+- [@OpenGovCan](https://twitter.com/opengovcan?lang=en). Open Government CAN, raising awareness and sparking dialogue about #GC #OpenGov efforts.
 
 ### News
 - [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
+
+### Other resources
+- [Stay connected with Government of Canada](https://www.international.gc.ca/gac-amc/contact-contactez/social-media_medias-sociaux.aspx?lang=eng). Social Media Official Accounts.
