@@ -7,4 +7,4 @@ If you don't know where to start or what you should write in your request to get
 
 After your developer account application gets approved, you will find your authenication keys in [this link](https://developer.twitter.com/en/apps), where you will find your keys: `API key`, `API secret key`, `Access token` and `Access token secret`.
 
-For this project I used my personal Twitter's keys; however, if you want to use these code, you will need to clone the repo and add your authentication keys in [the `twitter_config.py` file]() to run the scripts.
+For this project I used my personal Twitter's keys; however, if you want to use these code, you will need to clone the repo and add your authentication keys in [the `twitter_config.py` file](https://github.com/vcuspinera/Canada_response_covid/blob/master/keys/twitter_config.py) to run the scripts.
