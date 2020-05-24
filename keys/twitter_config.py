@@ -4,8 +4,8 @@
 ###   https://apps.twitter.com/app/new                                 ###
 ##########################################################################
 
-# App Name: 
-# App ID: 
+# App Name:
+# App ID:
 
 # Keys and tokens
 # Keys, secret keys and access tokens management.
