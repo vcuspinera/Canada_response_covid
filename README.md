@@ -10,4 +10,3 @@ Last March 27th the Prime Minister of Canada, Justin Trudeau, announce a series 
 - [Canadian PM \[@CanadianPM\]. (Joined May 2008). Official account of the Prime Minister of Canada. Twitter.](https://twitter.com/CanadianPM)
 - [Canada \[@Canada\]. (Joined April 2014). Showcasing Canada to the world. Twitter.](https://twitter.com/canada?lang=en)
 - [Health Canada and PHAC \[@GovCanHealth\]. (Joined April 2009). Health Canada and Public Health Agency of Canada. Twitter.](https://twitter.com/govcanhealth?lang=en)
-- [Open Government CAN \[@OpenGovCan\]. (Joined April 2014). Raising awareness and sparking dialogue about #GC #OpenGov efforts. Twitter.](https://twitter.com/opengovcan?lang=en)

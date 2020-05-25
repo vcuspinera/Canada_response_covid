@@ -14,11 +14,17 @@
 - **R** libraries
     - [`rtweet`](https://docs.ropensci.org/rtweet/)
 
+### Other essentials about Twitter
+- [Standard search API](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets)
+- [Rate limiting](https://developer.twitter.com/en/docs/basics/rate-limiting)
+- [Searching Raw Queries](https://python-twitter.readthedocs.io/en/latest/searching.html#raw-queries) in `python-twitter` library
+- [Search Tweets](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) by Twitter Developer
+- [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)
+
 ### Twitter accounts
 - [@CanadianPM](https://twitter.com/CanadianPM). Official account of the Prime Minister of Canada.
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada.
-- [@OpenGovCan](https://twitter.com/opengovcan?lang=en). Open Government CAN, raising awareness and sparking dialogue about #GC #OpenGov efforts.
 
 ### News
 - [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
