@@ -25,9 +25,12 @@
 - [@CanadianPM](https://twitter.com/CanadianPM). Official account of the Prime Minister of Canada.
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada.
+- [@OpenGovCan](https://twitter.com/OpenGovCan). Raising awareness and sparking dialogue about Government efforts.
 
 ### News
 - [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
 
 ### Other resources
 - [Stay connected with Government of Canada](https://www.international.gc.ca/gac-amc/contact-contactez/social-media_medias-sociaux.aspx?lang=eng). Social Media Official Accounts.
+- [Where to get Twitter data for academic research](https://gwu-libraries.github.io/sfm-ui/posts/2017-09-14-twitter-data), by Justin Littman.
+
