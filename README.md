@@ -1,6 +1,6 @@
 # People's perception of Canadian Government
 ### **i'm lovin' or hatin' it!**
-*Sentiment analysis of people's tweets refeering to Canadian Government's official accounts.*
+*Sentiment analysis of people's tweets refeering to Canadian Government's accounts.*
 
 ### Introduction
 The idea of this project was born after March 27th, 2020, when the Prime Minister of Canada, Justin Trudeau, [announced a series of policies facing impacts of Covid-19](https://youtu.be/1o-tV0A87l8) to support small businesses and their employees.  
