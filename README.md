@@ -4,7 +4,7 @@
 ### Authors
 
 |Name |Github| Webpage |
-|:----|:-----|:--------|
+|:----|:-----|:-------:|
 |Victor Cuspinera | [vcuspinera](https://github.com/vcuspinera) | [link](https://vcuspinera.github.io) |
 |Leopoldo Cuspinera | [cuspime](https://github.com/cuspime) | [link](https://cuspime.github.io) |
 
@@ -30,6 +30,5 @@ The objective of this project is to analyse the Canadian Government response to 
 - [@CanadianPM](https://twitter.com/CanadianPM). Official account of the Prime Minister of Canada. Twitter.
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world. Twitter.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada. Twitter.
-- [@OpenGovCan](https://twitter.com/OpenGovCan). Raising awareness and sparking dialogue about Government efforts. Twitter.
 
 [Click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/References.md) to access the complete list of references for this project.
