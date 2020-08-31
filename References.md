@@ -8,6 +8,7 @@
 ### Twitter libraries:
 - [Twitter libraries](https://developer.twitter.com/en/docs/developer-utilities/twitter-libraries).
 - **Python** libraries
+    - [`GetOldTweets3`][https://pypi.org/project/GetOldTweets3/]
     - [`python-twitter`](https://python-twitter.readthedocs.io/en/latest/)
     - [`tweepy`](http://www.tweepy.org)
     - [`twitter`](https://github.com/sixohsix/twitter)
@@ -22,6 +23,7 @@
 - [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)
 
 ### Twitter accounts
+- [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20). Official account of Justin Trudeau as public person, and 23rd Prime Minister of Canada. Twitter.
 - [@CanadianPM](https://twitter.com/CanadianPM). Official account of the Prime Minister of Canada.
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada.
