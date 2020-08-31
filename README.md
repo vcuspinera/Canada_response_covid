@@ -12,7 +12,7 @@
 ### Introduction
 The idea of this project was born after March 27th, 2020, when the Prime Minister of Canada, Justin Trudeau, [announced a series of policies facing impacts of Covid-19](https://youtu.be/1o-tV0A87l8) to support small businesses and their employees.  
 
-The objective of this project is to analyse the Canadian Government response to Covid-19 through the precepetion of the people by making sentiment analysis on people's tweets mentioning Canadian Government's accounts as [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en), [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) and [@OpenGovCan](https://twitter.com/OpenGovCan).
+The objective of this project is to analyse the Canadian Government response to Covid-19 through the precepetion of the people by making sentiment analysis on people's tweets mentioning Canadian Government's accounts as [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en).
 
 
 ### Overview
