@@ -6,7 +6,7 @@
 |Name |Github| Webpage |
 |:----|:-----|:-------:|
 |Victor Cuspinera | [vcuspinera](https://github.com/vcuspinera) | [<img src="/img/logo_vcuspinera.png" />](https://vcuspinera.github.io) |
-|Leopoldo Cuspinera | [[cuspime](https://github.com/cuspime) | ![](img/logo_cuspime.png)](https://cuspime.github.io) |
+|Leopoldo Cuspinera | [cuspime](https://github.com/cuspime) | [![](img/logo_cuspime.png)](https://cuspime.github.io) |
 
 
 ### Introduction
