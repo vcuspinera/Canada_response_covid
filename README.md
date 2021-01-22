@@ -5,8 +5,8 @@
 
 |Name |Github| Webpage |
 |:----|:-----|:-------:|
-|Victor Cuspinera | [vcuspinera](https://github.com/vcuspinera) | [link](https://vcuspinera.github.io) |
-|Leopoldo Cuspinera | [cuspime](https://github.com/cuspime) | [link](https://cuspime.github.io) |
+|Victor Cuspinera | [vcuspinera](https://github.com/vcuspinera) | [![](img/logo_vcuspinera.png){width 20%}](https://vcuspinera.github.io) |
+|Leopoldo Cuspinera | [[cuspime](https://github.com/cuspime) | ![](img/logo_cuspime.png)](https://cuspime.github.io) |
 
 
 ### Introduction
