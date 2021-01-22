@@ -8,10 +8,11 @@
 ### Twitter libraries:
 - [Twitter libraries](https://developer.twitter.com/en/docs/developer-utilities/twitter-libraries).
 - **Python** libraries
-    - [`GetOldTweets3`][https://pypi.org/project/GetOldTweets3/]
+    - [`snscrape`](https://github.com/JustAnotherArchivist/snscrape)
+    - [`GetOldTweets3`](https://pypi.org/project/GetOldTweets3/)
+    - [`twitter`](https://github.com/sixohsix/twitter)
     - [`python-twitter`](https://python-twitter.readthedocs.io/en/latest/)
     - [`tweepy`](http://www.tweepy.org)
-    - [`twitter`](https://github.com/sixohsix/twitter)
 - **R** libraries
     - [`rtweet`](https://docs.ropensci.org/rtweet/)
 
@@ -28,10 +29,10 @@
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada.
 
-### News
+### News and Articles
+- [How to Scrape Tweets From Twitter](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1). Towards Data Science.
+- [How to Scrape Tweets With snscrape](https://medium.com/better-programming/how-to-scrape-tweets-with-snscrape-90124ed006af). Medium.
 - [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
-
-### Other resources
 - [Stay connected with Government of Canada](https://www.international.gc.ca/gac-amc/contact-contactez/social-media_medias-sociaux.aspx?lang=eng). Social Media Official Accounts.
 - [Where to get Twitter data for academic research](https://gwu-libraries.github.io/sfm-ui/posts/2017-09-14-twitter-data), by Justin Littman.
 
