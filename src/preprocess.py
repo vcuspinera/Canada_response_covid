@@ -1,8 +1,8 @@
 # author: Leo Cuspinera and Victor Cuspinera
 # date: 2021-02-16
 
-'''This script load tweets dataset, perform preprocessing on the comments,
-and save the dababase in a new file.  
+'''This script load tweets dataset, performs preprocessing on the comments,
+and saves the dababase in a new file.  
 
 Usage: preprocess.py --input_dir=<input_dir_path> --output_dir=<destination_dir_path>
 
