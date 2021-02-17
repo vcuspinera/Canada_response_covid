@@ -1,4 +1,4 @@
-# author: Cuspinera Bros
+# author: Leo Cuspinera and Victor Cuspinera
 # date: 2021-02-16
 
 '''This script load tweets dataset, perform preprocessing on the comments,
