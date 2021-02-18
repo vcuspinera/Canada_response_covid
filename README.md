@@ -18,6 +18,7 @@ The objective of this project is to analyse the Canadian Government response to 
 ## Retrieving tweets
 To compare the tweets before and after Trudeau announcement, the first step was getting the tweets from March 1st to April 30th, from the four official-accounts selected from the Government of Canada.
 
+### Getting the tweets
 Our first attempt was using the [Twitter API](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v1_TwitterAPI.ipynb). For this reason we get a twitter developer's account<sup><a name="myfootnote1">1</a></sup>. However, the standard twitter developer's account only gives access to search historic databases with a 7-day limit, which means that I was not able to find tweets for a date older than one week, so this approach was not useful for the objective of our project.
 
 For our second approach we used the [GetOldTweets3 library](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v2_GetOldTweets3.ipynb). This innitially worked, however due the changes in Twitter's API in late 2020, GetOldTweets3 is not longer functioning.
@@ -28,6 +29,8 @@ With the snscrape package we download a maximum of 100,000 tweets saving them in
 
 Subsequently, we merged some selected columns of these files in one file named _tweets_db.json_.
 
+
+### Preprocessing tweets
 Our final step of this section was [preprocessing the tweets](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) to delete some of the sensible information as emails and urls.<sup><a name="myfootnote2">2</a></sup> You can run the preprocess.py script by writing in the Terminal at the main folder of this repository:
 
 ```
@@ -36,12 +39,15 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 
 ## EDA
 
+_⚠️ Will add some details and plots of this analysis_
+
+The basic analysisi and EDA of this report is available [here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
 ## Sentiment Analysis
-
+_⚠️ Coming soon_
 
 ## Results
-
+_⚠️ Coming soon_
 
 ## Main references
 - [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
