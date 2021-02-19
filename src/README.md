@@ -9,4 +9,4 @@ Brief overview of each script and jupyter notebook in this directory in the orde
 |[twitter-search_v3_snscrape.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) | jupyter notebook |Search for tweets using snscrape. ✅ This notebook works well.|
 |[preprocess.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) | python script |Identify sensible information from tweets and performs the customed preprocess. |
 |[eda.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb) | jupyter notebook |Uses the preprocessed tweets to perform basic analysis and EDA. |
-|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) |jupyter notebook |Performs sentimen analysis of tweets. |
+|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) |jupyter notebook |Performs sentimen analysis on tweets. |
