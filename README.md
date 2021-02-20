@@ -1,5 +1,10 @@
+<img src="img/canada_word_cloud.jpg" width="150" align = "right">
+
 # Canada response to Covid-19
 *Sentiment analysis of people's tweets refeering to Canadian Government's accounts after Government announcement of policies as response of Covid-19.*
+
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Authors
 
