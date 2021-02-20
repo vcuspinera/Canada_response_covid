@@ -1,4 +1,4 @@
-<img src="img/canada_word_cloud.jpg" width="260" align = "right">
+<img src="img/canada_word_cloud.jpg" width="250" align = "right">
 
 # Canada response to Covid-19
 *Sentiment analysis of people's tweets refeering to Canadian Government's accounts after Government announcement of policies as response of Covid-19.*
