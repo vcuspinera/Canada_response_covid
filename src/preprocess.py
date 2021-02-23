@@ -17,7 +17,6 @@ Options:
 # Libraries
 import pandas as pd
 import numpy as np
-# from datetime import datetime, timedelta, date
 import os
 import re
 import spacy
@@ -28,6 +27,7 @@ from docopt import docopt
 
 opt = docopt(__doc__)
 
+
 def main(input_dir, output_dir):
     print("\n--- START: preprocess.py ---")
 
@@ -35,29 +35,10 @@ def main(input_dir, output_dir):
     assert os.path.exists(input_dir), "The path entered for input_dir does not exist. Make sure to enter correct path \n"
     assert os.path.exists(output_dir), "The path entered for output_dir does not exist. Make sure to enter correct path \n"
 
-    ############  PARAMETERS  ############
-    # # dates
-    # today = datetime.now()
-    # init = date.fromisoformat('2020-03-01')
-
-    # my_dates = list()
-    # for d in range(0, 61, 1):
-    # # for d in range(0, 1, 1):
-    #     aux = init + timedelta(days=d)
-    #     my_dates.append(aux)
-
-    # # twitter accounts
-    # accounts = ('JustinTrudeau', 'CanadianPM', 'Canada', 'GovCanHealth')
-
-    # # max number of results
-    # max_results = 100_000
-
-
     ############  OPEN TWEETS  ############
     print("Loading: open the Json file with all tweets")
     # Open json file with all tweets
     df_tot = pd.read_json(input_dir + 'tweets_db.json')
-
 
     ############  RUN PREPROCESS  ############
     print('Preprocess: this step could take time, please be patient')
@@ -71,6 +52,7 @@ def main(input_dir, output_dir):
 
     print("--- END: preprocess.py ---\n")
     return
+
 
 def preprocess(text, irrelevant_pos = ['SPACE'],
               avoid_entities = ['ORG']):
