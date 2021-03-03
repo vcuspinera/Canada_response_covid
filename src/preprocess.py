@@ -1,4 +1,4 @@
-# author: Leo Cuspinera and Victor Cuspinera
+# authors: Leo Cuspinera and Victor Cuspinera
 # date: 2021-02-16
 
 '''This script load tweets dataset, performs preprocessing on the comments,
@@ -10,8 +10,8 @@ Example:
     python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 
 Options:
---input_dir=<input_dir_path> Location of data Directory
---output_dir=<destination_dir_path> Directory for saving ministries files
+--input_dir=<input_dir_path> Directory with the consolidated data (tweets_db.json)
+--output_dir=<destination_dir_path> Directory for saving the preprocessed tweets (tweets_db_clean.json)
 '''
 
 # Libraries
@@ -35,19 +35,16 @@ def main(input_dir, output_dir):
     assert os.path.exists(input_dir), "The path entered for input_dir does not exist. Make sure to enter correct path \n"
     assert os.path.exists(output_dir), "The path entered for output_dir does not exist. Make sure to enter correct path \n"
 
-    ############  OPEN TWEETS  ############
+    # Open tweets
     print("Loading: open the Json file with all tweets")
-    # Open json file with all tweets
     df_tot = pd.read_json(input_dir + 'tweets_db.json')
 
-    ############  RUN PREPROCESS  ############
+    # Run preprocess
     print('Preprocess: this step could take time, please be patient')
-    # Preprocess tweets
     df_tot['tweet'] = preprocess(df_tot['content'])
 
-    ############  SAVE NEW FILE  ############
+    # Save new file
     print('Saving: saves the preprocessed tweets')
-    # Save file
     df_tot.drop('content', axis=1).to_json(output_dir + 'tweets_db_clean.json')
 
     print("--- END: preprocess.py ---\n")
