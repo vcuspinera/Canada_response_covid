@@ -90,14 +90,14 @@ To replicate the analysis, clone this GitHub repository, and follow the next ste
 
 2. Open [`twitter-search_v2_GetOldTweets3.ipynb`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) notebook located in the _src_ folder, and run all cells.
 
-3. Run the Python script [`preprocess.py`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) in the terminal from the root directory of this project to prepare data for the models.
+3. Run the Python script [`preprocess.py`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) in the terminal from the root directory of this project to identify and delete sensible information.
 ```
 python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ```
 
 4. Open and run [`eda.ipynb`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb) notebook.
 
-5. Run the Python script [`tweets_sentiment.py`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py) in the terminal from the root directory of this project to prepare data for the models.
+5. Run the Python script [`tweets_sentiment.py`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py) in the terminal from the root directory of this project to select only tweets written in English and add Polarity and Subjectivity scores from SpaCy.
 ```
 python src/tweets_sentiment.py --input_file=tweets/tweets_db_clean.json --output_dir=tweets/
 ```
