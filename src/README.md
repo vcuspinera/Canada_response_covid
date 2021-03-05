@@ -9,5 +9,5 @@ Brief overview of each script and jupyter notebook in this directory in the orde
 |1C|[twitter-search_v3_snscrape.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) | notebook |Search for tweets using snscrape. ✅ This notebook works well.|
 |2|[preprocess.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) | script |Identify sensible information from tweets and performs the customed preprocess. |
 |3|[eda.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb) | notebook |Uses the preprocessed tweets to perform basic analysis and EDA. |
-|4|[tweets_sentiment.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py)| script |Script that use SpaCy sentiment analysis for polarity and subjectivity of tweets. |
-|5|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) | notebook |Performs sentimen analysis on tweets. |
+|4|[tweets_sentiment.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py)| script |Script that use SpaCy sentiment analysis to get _polarity_ and _subjectivity_ of tweets. |
+|5|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) | notebook |Performs sentiment analysis on tweets. |
