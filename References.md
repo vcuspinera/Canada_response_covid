@@ -6,7 +6,7 @@
 - [Example of the Application Process](https://wptweetboost.com/example-of-the-twitter-developer-account-application-process/) by Hudson Atwell
 
 ### Twitter libraries:
-- [Twitter libraries](https://developer.twitter.com/en/docs/developer-utilities/twitter-libraries).
+- [Twitter developer's tools and libraries](https://developer.twitter.com/en/docs/developer-utilities/twitter-libraries).
 - **Python** libraries
     - [`snscrape`](https://github.com/JustAnotherArchivist/snscrape)
     - [`GetOldTweets3`](https://pypi.org/project/GetOldTweets3/)
@@ -17,7 +17,7 @@
     - [`rtweet`](https://docs.ropensci.org/rtweet/)
 
 ### Sentiment analysis tools:
-- [`SpaCy`](https://spacy.io)
+- [`spaCy`](https://spacy.io)
 - [`spaCyTextBlob`](https://github.com/SamEdwardes/spaCyTextBlob)
 - [`textblob`](https://textblob.readthedocs.io/en/dev/)
 - [`wordcloud`](https://amueller.github.io/word_cloud/index.html)
@@ -29,7 +29,7 @@
 - [Search Tweets](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) by Twitter Developer
 - [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)
 
-### Twitter accounts
+### Government of Canada Twitter accounts
 - [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20). Official account of Justin Trudeau as public person, and 23rd Prime Minister of Canada. Twitter.
 - [@CanadianPM](https://twitter.com/CanadianPM). Official account of the Prime Minister of Canada.
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world.
