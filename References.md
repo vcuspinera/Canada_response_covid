@@ -16,6 +16,12 @@
 - **R** libraries
     - [`rtweet`](https://docs.ropensci.org/rtweet/)
 
+### Sentiment analysis tools:
+- [`SpaCy`](https://spacy.io)
+- [`spaCyTextBlob`](https://github.com/SamEdwardes/spaCyTextBlob)
+- [`textblob`](https://textblob.readthedocs.io/en/dev/)
+- [`wordcloud`](https://amueller.github.io/word_cloud/index.html)
+
 ### Other essentials about Twitter
 - [Standard search API](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets)
 - [Rate limiting](https://developer.twitter.com/en/docs/basics/rate-limiting)
@@ -30,9 +36,8 @@
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada.
 
 ### News and Articles
-- [How to Scrape Tweets From Twitter](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1). Towards Data Science.
-- [How to Scrape Tweets With snscrape](https://medium.com/better-programming/how-to-scrape-tweets-with-snscrape-90124ed006af). Medium.
+- [How to Scrape Tweets from Twitter](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1). Towards Data Science.
+- [How to Scrape Tweets with snscrape](https://medium.com/better-programming/how-to-scrape-tweets-with-snscrape-90124ed006af). Medium.
 - [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
 - [Stay connected with Government of Canada](https://www.international.gc.ca/gac-amc/contact-contactez/social-media_medias-sociaux.aspx?lang=eng). Social Media Official Accounts.
 - [Where to get Twitter data for academic research](https://gwu-libraries.github.io/sfm-ui/posts/2017-09-14-twitter-data), by Justin Littman.
-
