@@ -44,15 +44,15 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 
 ## EDA
 
-When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, [@Canada](https://twitter.com/Canada) had between 29.1 and 62.4 thousand tweets per day, followed by [@JustinTrudeau](https://twitter.com/JustinTrudeau) that had between 3.5 and 29.7 thousand tweets per day. While @Canada and @JustinTrudeau accounts had more than 3 thousand tweets, Twitter's users published between 131 and 1,207 tweets naming [@CanadianPM](https://twitter.com/CanadianPM), and between 105 and 1,188 tweets with [@GovCanHealth](https://twitter.com/GovCanHealth).
+When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, the [@Canada](https://twitter.com/Canada) account had between 29.1 and 62.4 thousand tweets per day, followed by [@JustinTrudeau](https://twitter.com/JustinTrudeau) in a range of 3.5 to 29.7 thousand tweets per day. With much fewer tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 131 and 1,207 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 105 and 1,188 tweets per day.
 
 <img src="img/EDA_1_tweets_per_day.png" width="550" align = "center">
 
-The retrieved tweets were mainly written in English -around 85%-, followed by Spanish and French. Also, a large number of tweets have an undefined language. For this reason, in the main analysis we could select a subset of tweets wrote in English to use usefull tools as [SpaCy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html).
+Most tweets were written in English -around 85% -, followed by Spanish and French. Also, a large number of tweets have an undefined language. For the main analysis we used the tweets wrote in English, which let us to use usefull tools as [SpaCy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
 <img src="img/EDA_2_proportion_by_language.png" width="550" align = "center">
 
-When normalizing the number of tweets by account, we can identify the days with more tweets for each account. With the following plot we can identify a higher number of tweets for all twitter accounts between March 12 and March 29, 2020.
+When normalizing the number of tweets by account, we can identify the days with more tweets. In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
 
 <img src="img/EDA_3_heatmap_weights.png" width="750" align = "center">
 
