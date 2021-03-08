@@ -49,11 +49,11 @@ os.system("snscrape --jsonl --max-results 1_000 --since 2020-05-01 twitter-searc
 df = pd.read_json('../tweets/JustinTrudeau_2020-05-01.json', lines=True)
 ```
 
-With the snscrape package we download as much as 100,000 tweets per day for each Twitter account of the Government of Canada. This means that we got 244 `JSON` files, and stored them in the [_tweets_ folder of this repository](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets).
+With the snscrape package we download as much as 100,000 tweets per day for each Twitter account of the Government of Canada. This means that we got 244 `JSON` files, and stored them in [the _tweets_ folder](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets) of this repository.
 
-Subsequently, we merged some selected columns of these files in one file named *tweets_db.json*.
+Subsequently, we merged some selected columns of these files in one file named *tweets_db.json*
 
-[👉 here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) you can find more details about how we download the tweets with `snscrape`.
+[👉 click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) to see more details about how we download tweets with `snscrape`.
 
 ### Preprocessing tweets
 Our final step of this section was [preprocessing the tweets](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) to delete some of the sensible information as emails and urls.<sup><a name="myfootnote2">2</a></sup> You can run the preprocess.py script by writing in the Terminal at the main folder of this repository:
