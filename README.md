@@ -82,17 +82,17 @@ For sentiment analysis we select only tweets written in english, and use descrip
 
 When comparing wordclouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
 
-<img src="img/sentiment_wordcloud.png" width="750">
+<img src="img/sentiment_wordcloud.png" width="550">
 
 Additionally, we explore sentiment analysis with [SpaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>
 
 In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skeweed to be positive. In the other hand, these tweets were much more objective than subjective.
 
-<img src="img/sentiment_polar_subject.png" width="750">
+<img src="img/sentiment_polar_subject.png" width="650">
 
 Finaly, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
 
-<img src="img/sentiment_reactions.png" width="750">
+<img src="img/sentiment_reactions.png" width="650">
 
 [👉 click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
 
