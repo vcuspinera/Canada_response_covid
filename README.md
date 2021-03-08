@@ -1,7 +1,7 @@
 <img src="img/logo_canada_word_cloud.png" width="180" align = "right">
 
 # Canada response to Covid-19
-*Sentiment analysis of people's tweets refeering to Canadian Government's accounts after Government announcement of policies as response of Covid-19.*
+*Sentiment analysis of people's tweets referring to Canadian Government's accounts after Government announcement of policies as response of Covid-19.*
 
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -15,27 +15,27 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 ## Overview
 The idea of this project was born after March 27th, 2020, when the Prime Minister of Canada, Justin Trudeau, [announced a series of policies facing impacts of Covid-19](https://youtu.be/1o-tV0A87l8) to support small businesses and their employees.  
 
-The objective of this project is to analyse the Canadian Government response to Covid-19 through the percepetion of the people by making sentiment analysis on people's tweets mentioning Canadian Government's accounts as [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en).
+The objective of this project is to analyse the Canadian Government response to Covid-19 through the perception of the people by making sentiment analysis on people's tweets mentioning Canadian Government's accounts as [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en).
 
 ## Retrieving tweets
 To compare the tweets before and after Trudeau announcement, the first step was getting the tweets from March 1st to April 30th, from the four official-accounts selected from the Government of Canada.
 
 ### Getting the tweets
 #### What didn't work: `Twitter API` and `GetOldTweets3` library
-Our first attempt was using the [Twitter API](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v1_TwitterAPI.ipynb). For this reason we get a twitter developer's account<sup><a name="myfootnote1">1</a></sup>. However, the standard twitter developer's account only gives access to search historic databases with a 7-day limit, which means that I was not able to find tweets for a date older than one week, so this approach was not useful for the objective of our project.
+Our first attempt was using the [Twitter API](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v1_TwitterAPI.ipynb). For this reason, we get a twitter developer's account<sup><a name="myfootnote1">1</a></sup>. However, the standard twitter developer's account only gives access to search historic databases with a 7-day limit, which means that I was not able to find tweets for a date older than one week, so this approach was not useful for the objective of our project.
 
-For our second approach we used the [GetOldTweets3 library](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v2_GetOldTweets3.ipynb). This innitially worked, however due the changes in Twitter's API in late 2020, GetOldTweets3 is not longer functioning.
+For our second approach we used the [GetOldTweets3 library](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v2_GetOldTweets3.ipynb). This initially worked, however due the changes in Twitter's API in late 2020, GetOldTweets3 is no longer functioning.
 
-#### What worked for teh project: `snscrape` library
+#### What worked for the project: `snscrape` library
 
-Our final and succesful approach to get the wanted tweets was using the [snscrape](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). This package allowed us to find old tweets as opposed to the free version of the API from twitter, and the GetOldTweets3 library that is non-currently working.
+Our final and successful approach to get the wanted tweets was using the [snscrape](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). This package allowed us to find old tweets as opposed to the free version of the API from twitter, and the GetOldTweets3 library that is non-currently working.
 
 In this case, we use the development version of snscrape to access information directly from tweets instead of tweet URLs:
 ```
 !pip3 install git+https://github.com/JustAnotherArchivist/snscrape.git
 ```
 
-An important point is that this package works directly from the terminal with Command Line Interface (CLI) so, in this case, we didn't need to call it as a library but we use the OS library for Python to execute snscrape with CLI commands in Python. In the next code chunk you could find how to use it in jupyter:
+An important point is that this package works directly from the terminal with Command Line Interface (CLI) so, in this case, we didn't need to call it as a library but we use the OS library for Python to execute snscrape with CLI commands in Python. In the next code chunk, you could find how to use it in jupyter:
 
 ```python
 # Libraries
@@ -67,7 +67,7 @@ When comparing the tweets per day by Canadian Government Twitter accounts, we fi
 
 <img src="img/EDA_1_tweets_per_day.png" width="550">
 
-Most tweets were written in English -around 85% -, followed by Spanish and French. Also, a large number of tweets have an undefined language. For the main analysis we used the tweets wrote in English, which let us to use usefull tools as [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
+Most tweets were written in English -around 85% -, followed by Spanish and French. Also, a large number of tweets have an undefined language. For the main analysis we used the tweets wrote in English, which let us to use useful tools as [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
 <img src="img/EDA_2_proportion_by_language.png" width="550">
 
@@ -78,26 +78,26 @@ When normalizing the number of tweets by account, we can identify the days with 
 More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
 ## Sentiment Analysis
-For sentiment analysis we select only tweets written in english, and use descriptive statistics based in counts of words, wordclouds and scores get by [spaCy](https://spacy.io).
+For sentiment analysis we select only tweets written in English, and use descriptive statistics based in counts of words, word clouds and scores get by [spaCy](https://spacy.io).
 
-When comparing wordclouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
+When comparing word clouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
 
-<img src="img/sentiment_wordcloud.png" width="550">
+<img src="img/sentiment_wordcloud.png" width="600">
 
-Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>
+Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>  
 
-In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skeweed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the annoucement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
+In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skewed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the announcement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
 
-<img src="img/sentiment_polar_subject.png" width="650">
+<img src="img/sentiment_polar_subject.png" width="700">
 
 Finally, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
 
-<img src="img/sentiment_reactions.png" width="650">
+<img src="img/sentiment_reactions.png" width="700">
 
 [👉 click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
 
-## Results
-While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's annoucement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 finnancial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the annoucement; however, this event impact in the volume of tweets, actions and reactions of users.
+## Final comments
+While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's announcement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 financial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the announcement; however, this event impact in the volume of tweets, actions and reactions of users.
 
 ## Dependencies
 |Python packages|Python packages|
@@ -152,8 +152,8 @@ python src/tweets_sentiment.py --input_file=tweets/tweets_db_clean.json --output
 <br>
 
 ---
-<sup>[[1]](#myfootnote1) If you are interested to get the twitter developer's account, [click here](https://github.com/vcuspinera/Canada_response_covid/tree/master/keys) to see details and recomendation to get one.</sup>
+<sup>[[1]](#myfootnote1) If you are interested to get the twitter developer's account, [click here](https://github.com/vcuspinera/Canada_response_covid/tree/master/keys) to see details and recommendation to get one.</sup>
 
-<sup>[[2]](#myfootnote2) We didn't delete all the sensible information nor anonymize the tweets because we losed important tokens as _Trudeau_ or the tags to official Twitter accounts of Canadian Government.</sup>
+<sup>[[2]](#myfootnote2) We didn't delete all the sensible information nor anonymize the tweets because we loosed important tokens as _Trudeau_ or the tags to official Twitter accounts of Canadian Government.</sup>
 
 <sup>[[3]](#myfootnote3) `polarity` score is a float within the range [-1.0, 1.0] where -1.0 is a very negative tweet and 1.0 is positive one. In the other hand, `subjectivity` is a float within the range [0.0, 1.0] where 0.0 is very objective and 1.0 is very subjective.</sup>
