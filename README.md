@@ -65,39 +65,56 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ## EDA
 When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, the [@Canada](https://twitter.com/Canada) account had between 29.1 and 62.4 thousand tweets per day, followed by [@JustinTrudeau](https://twitter.com/JustinTrudeau) in a range of 3.5 to 29.7 thousand tweets per day. With much fewer tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 131 and 1,207 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 105 and 1,188 tweets per day.
 
-<img src="img/EDA_1_tweets_per_day.png" width="550" align = "center">
+<img src="img/EDA_1_tweets_per_day.png" width="550">
 
 Most tweets were written in English -around 85% -, followed by Spanish and French. Also, a large number of tweets have an undefined language. For the main analysis we used the tweets wrote in English, which let us to use usefull tools as [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
-<img src="img/EDA_2_proportion_by_language.png" width="550" align = "center">
+<img src="img/EDA_2_proportion_by_language.png" width="550">
 
 When normalizing the number of tweets by account, we can identify the days with more tweets. In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
 
-<img src="img/EDA_3_heatmap_weights.png" width="750" align = "center">
+<img src="img/EDA_3_heatmap_weights.png" width="750">
 
 More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
 ## Sentiment Analysis
-The sentiment analysis is available in [this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb).
+For sentiment analysis we select only tweets written in english, and use descriptive statistics based in counts of words, wordclouds and scores get by spaCy.
+
+When comparing wordclouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
+
+<img src="img/sentiment_wordcloud.png" width="750">
+
+Additionally, we explore sentiment analysis with [SpaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>
+
+In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skeweed to be positive. In the other hand, these tweets were much more objective than subjective.
+
+<img src="img/sentiment_polar_subject.png" width="750">
+
+Finaly, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
+
+<img src="img/sentiment_reactions.png" width="750">
+
+[👉 click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
 
 ## Results
-_⚠️ Coming soon_
+While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's annoucement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 finnancial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the annoucement; however, this event impact in the volume of tweets, actions and reactions of users.
 
 ## Dependencies
 |Python packages|Python packages|
-|:---|:---|
-|altair |pytz|
-|collections|re|
+|:------|:---|
+|altair |re  |
+|collections|scipy |
 |datetime|seaborn |
 |docopt |spacy|
 |en_core_web_sm|spacytextblob |
 |GetOldTweets3 |string|
-|json|textblob |
+|json   |textblob |
 |matplotlib |textblob |
-|numpy |time|
-|os|twitter|
-|pandas|warnings|
-|PIL |wordcloud |
+|numpy  |time|
+|os     |twitter|
+|pandas |warnings|
+|PIL    |wordcloud |
+|pytz   | |
 
 ## Usage
 ### Running recipe (recommended)
@@ -138,3 +155,5 @@ python src/tweets_sentiment.py --input_file=tweets/tweets_db_clean.json --output
 <sup>[[1]](#myfootnote1) If you are interested to get the twitter developer's account, [click here](https://github.com/vcuspinera/Canada_response_covid/tree/master/keys) to see details and recomendation to get one.</sup>
 
 <sup>[[2]](#myfootnote2) We didn't delete all the sensible information nor anonymize the tweets because we losed important tokens as _Trudeau_ or the tags to official Twitter accounts of Canadian Government.</sup>
+
+<sup>[[3]](#myfootnote3) `polarity` score is a float within the range [-1.0, 1.0] where -1.0 is a very negative tweet and 1.0 is positive one. In the other hand, `subjectivity` is a float within the range [0.0, 1.0] where 0.0 is very objective and 1.0 is very subjective.</sup>
