@@ -78,19 +78,19 @@ When normalizing the number of tweets by account, we can identify the days with 
 More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
 ## Sentiment Analysis
-For sentiment analysis we select only tweets written in english, and use descriptive statistics based in counts of words, wordclouds and scores get by spaCy.
+For sentiment analysis we select only tweets written in english, and use descriptive statistics based in counts of words, wordclouds and scores get by [spaCy](https://spacy.io).
 
 When comparing wordclouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
 
 <img src="img/sentiment_wordcloud.png" width="550">
 
-Additionally, we explore sentiment analysis with [SpaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>
+Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>
 
-In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skeweed to be positive. In the other hand, these tweets were much more objective than subjective.
+In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skeweed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the annoucement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
 
 <img src="img/sentiment_polar_subject.png" width="650">
 
-Finaly, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
+Finally, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
 
 <img src="img/sentiment_reactions.png" width="650">
 
