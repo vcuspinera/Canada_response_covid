@@ -21,15 +21,39 @@ The objective of this project is to analyse the Canadian Government response to 
 To compare the tweets before and after Trudeau announcement, the first step was getting the tweets from March 1st to April 30th, from the four official-accounts selected from the Government of Canada.
 
 ### Getting the tweets
+#### What didn't work: `Twitter API` and `GetOldTweets3` library
 Our first attempt was using the [Twitter API](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v1_TwitterAPI.ipynb). For this reason we get a twitter developer's account<sup><a name="myfootnote1">1</a></sup>. However, the standard twitter developer's account only gives access to search historic databases with a 7-day limit, which means that I was not able to find tweets for a date older than one week, so this approach was not useful for the objective of our project.
 
 For our second approach we used the [GetOldTweets3 library](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v2_GetOldTweets3.ipynb). This innitially worked, however due the changes in Twitter's API in late 2020, GetOldTweets3 is not longer functioning.
 
-The final (and succesful) approach to get the wanted tweets was using the [snscrape package](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). This package allowed us to find old tweets as opposed to the free version of the API from twitter, and the GetOldTweets3 library that is non-currently working.
+#### What worked for teh project: `snscrape` library
 
-With the snscrape package we download a maximum of 100,000 tweets saving them in one file per each day for each account. This means that we got 244 `JSON` files, storaging them in the [_tweets_ folder of this repository](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets).
+Our final and succesful approach to get the wanted tweets was using the [snscrape](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). This package allowed us to find old tweets as opposed to the free version of the API from twitter, and the GetOldTweets3 library that is non-currently working.
 
-Subsequently, we merged some selected columns of these files in one file named _tweets_db.json_.
+In this case, we use the development version of snscrape to access information directly from tweets instead of tweet URLs:
+```
+!pip3 install git+https://github.com/JustAnotherArchivist/snscrape.git
+```
+
+An important point is that this package works directly from the terminal with Command Line Interface (CLI) so, in this case, we didn't need to call it as a library but we use the OS library for Python to execute snscrape with CLI commands in Python. In the next code chunk you could find how to use it in jupyter:
+
+```
+# Libraries
+import os
+import pandas as pd
+
+# Use OS library to call snscrape with CLI in Python and save tweets
+os.system("snscrape --jsonl --max-results 1_000 --since 2020-05-01 twitter-search 'JustinTrudeau until:2020-05-02' > ../tweets/JustinTrudeau_2020-05-01.json")
+
+# Calling the JSON files to analyse tweets
+df = pd.read_json('../tweets/JustinTrudeau_2020-05-01.json', lines=True)
+```
+
+With the snscrape package we download as much as 100,000 tweets per day for each Twitter account of the Government of Canada. This means that we got 244 `JSON` files, and stored them in the [_tweets_ folder of this repository](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets).
+
+Subsequently, we merged some selected columns of these files in one file named *tweets_db.json*.
+
+[👉 here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) you can find more details about how we download the tweets with `snscrape`.
 
 ### Preprocessing tweets
 Our final step of this section was [preprocessing the tweets](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) to delete some of the sensible information as emails and urls.<sup><a name="myfootnote2">2</a></sup> You can run the preprocess.py script by writing in the Terminal at the main folder of this repository:
