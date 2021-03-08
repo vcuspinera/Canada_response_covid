@@ -37,7 +37,7 @@ In this case, we use the development version of snscrape to access information d
 
 An important point is that this package works directly from the terminal with Command Line Interface (CLI) so, in this case, we didn't need to call it as a library but we use the OS library for Python to execute snscrape with CLI commands in Python. In the next code chunk you could find how to use it in jupyter:
 
-```
+```python
 # Libraries
 import os
 import pandas as pd
@@ -45,7 +45,7 @@ import pandas as pd
 # Use OS library to call snscrape with CLI in Python and save tweets
 os.system("snscrape --jsonl --max-results 1_000 --since 2020-05-01 twitter-search 'JustinTrudeau until:2020-05-02' > ../tweets/JustinTrudeau_2020-05-01.json")
 
-# Calling the JSON files to analyse tweets
+# Call tweet's json files as Data Frame
 df = pd.read_json('../tweets/JustinTrudeau_2020-05-01.json', lines=True)
 ```
 
