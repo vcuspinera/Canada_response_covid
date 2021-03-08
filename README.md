@@ -28,7 +28,10 @@ For our second approach we used the [GetOldTweets3 library](https://github.com/v
 
 #### What worked for the project: `snscrape` library
 
-Our final and successful approach to get the wanted tweets was using the [snscrape](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). This package allowed us to find old tweets as opposed to the free version of the API from twitter, and the GetOldTweets3 library that is non-currently working.
+Our final and successful approach to get the wanted tweets was using the [snscrape](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). 
+<s>
+This package allowed us to find old tweets as opposed to the free version of the API from twitter, and the GetOldTweets3 library that is non-currently working.
+</s>
 
 In this case, we use the development version of snscrape to access information directly from tweets instead of tweet URLs:
 ```
@@ -49,7 +52,7 @@ os.system("snscrape --jsonl --max-results 1_000 --since 2020-05-01 twitter-searc
 df = pd.read_json('../tweets/JustinTrudeau_2020-05-01.json', lines=True)
 ```
 
-With the snscrape package we download as much as 100,000 tweets per day for each Twitter account of the Government of Canada. This means that we got 244 `JSON` files, and stored them in [the _tweets_ folder](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets) of this repository.
+With the snscrape package we download as many as 100,000 tweets per day for each Twitter account of the Government of Canada. This means that we got 244 `JSON` files, and stored them in [the _tweets_ folder](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets) of this repository.
 
 Subsequently, we merged some selected columns of these files in one file named *tweets_db.json*
 
@@ -67,11 +70,14 @@ When comparing the tweets per day by Canadian Government Twitter accounts, we fi
 
 <img src="img/EDA_1_tweets_per_day.png" width="550">
 
-Most tweets were written in English -around 85% -, followed by Spanish and French. Also, a large number of tweets have an undefined language. For the main analysis we used the tweets wrote in English, which let us to use useful tools as [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
+Most tweets were written in English -around 85% -, followed by Spanish and French. Notice that there's a large number of tweets have with an undefined language. For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
 <img src="img/EDA_2_proportion_by_language.png" width="550">
 
-When normalizing the number of tweets by account, we can identify the days with more tweets. In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
+When normalizing the number of tweets by account, we can identify the days with more tweets. 
+<span style="color:orange"> maybe some moving average here would be better? a 3 day window should suffice although a 7 days window would help remove weekly seasonality.
+</span>
+In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
 
 <img src="img/EDA_3_heatmap_weights.png" width="750">
 
@@ -87,6 +93,11 @@ When comparing word clouds of tweets published before and after the announcement
 Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>  
 
 In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skewed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the announcement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
+<span style="color:orange">
+I think a log scale for this very plot would be better, cause they're just too close to each other and the range of values is very big. There are some subjectivity outliers around 0. Is this normal???
+More importantly,
+here I would do something slightly different. I would not take the tweets before and after and divide them in 2 likt this. I think I would rather see a time series. So, I would prefer to see medians with bands that move through time (with a window average if it helps). This would help me better to "see" what happened. Maybe the difference was huge within 3 days and then it went back to normal?
+</span> 
 
 <img src="img/sentiment_polar_subject.png" width="700">
 
