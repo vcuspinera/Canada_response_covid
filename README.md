@@ -65,7 +65,7 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ## EDA
 When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, the [@Canada](https://twitter.com/Canada) account had between 29.1 and 62.4 thousand tweets per day, followed by [@JustinTrudeau](https://twitter.com/JustinTrudeau) in a range of 3.5 to 29.7 thousand tweets per day. With much fewer tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 131 and 1,207 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 105 and 1,188 tweets per day.
 
-<img src="img/EDA_1_tweets_per_day.png" width="550">
+<img src="img/EDA_1_tweets_per_day.png" width="600">
 
 Most tweets were written in English -around 85% -, followed by Spanish and French. Also, a large number of tweets have an undefined language. For the main analysis we used the tweets wrote in English, which let us to use useful tools as [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
@@ -73,7 +73,7 @@ Most tweets were written in English -around 85% -, followed by Spanish and Frenc
 
 When normalizing the number of tweets by account, we can identify the days with more tweets. In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
 
-<img src="img/EDA_3_heatmap_weights.png" width="750">
+<img src="img/EDA_3_heatmap_weights.png" width="780">
 
 More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
@@ -88,7 +88,7 @@ Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `po
 
 In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skewed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the announcement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
 
-<img src="img/sentiment_polar_subject.png" width="700">
+<img src="img/sentiment_polar_subject.png" width="750">
 
 Finally, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
 
