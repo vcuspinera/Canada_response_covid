@@ -94,11 +94,13 @@ When comparing word clouds of tweets published before and after the announcement
 Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>  
 
 In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skewed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the announcement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
-<span style="color:orange">
+
+sdf
+<p style="color:blue">
 I think a log scale for this very plot would be better, cause they're just too close to each other and the range of values is very big. There are some subjectivity outliers around 0. Is this normal???
 More importantly,
 here I would do something slightly different. I would not take the tweets before and after and divide them in 2 likt this. I think I would rather see a time series. So, I would prefer to see medians with bands that move through time (with a window average if it helps). This would help me better to "see" what happened. Maybe the difference was huge within 3 days and then it went back to normal?
-</span> 
+</p> 
 
 <img src="img/sentiment_polar_subject.png" width="750">
 
