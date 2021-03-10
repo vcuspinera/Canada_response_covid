@@ -82,7 +82,7 @@ For sentiment analysis we select only tweets written in English, and use descrip
 
 When comparing word clouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
 
-<img src="img/sentiment_wordcloud.png" width="600">
+<img src="img/sentiment_wordcloud.png" width="650">
 
 Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>  
 
@@ -147,7 +147,7 @@ python src/tweets_sentiment.py --input_file=tweets/tweets_db_clean.json --output
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world. Twitter.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada. Twitter.
 
-[Click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/References.md) to access the complete list of references for this project.
+👉 [Click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/References.md) to access the complete list of references for this project.
 
 <br>
 
