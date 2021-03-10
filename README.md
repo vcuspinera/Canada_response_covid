@@ -75,7 +75,7 @@ When normalizing the number of tweets by account, we can identify the days with 
 
 <img src="img/EDA_3_heatmap_weights.png" width="780">
 
-More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
+⭐️ More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
 ## Sentiment Analysis
 For sentiment analysis we select only tweets written in English, and use descriptive statistics based in counts of words, word clouds and scores get by [spaCy](https://spacy.io).
@@ -94,7 +94,7 @@ Finally, while the announcement didn't impact in the sentiment of tweets, it imp
 
 <img src="img/sentiment_reactions.png" width="700">
 
-[👉 click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
+[⭐️ click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
 
 ## Final comments
 While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's announcement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 financial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the announcement; however, this event impact in the volume of tweets, actions and reactions of users.
@@ -147,7 +147,7 @@ python src/tweets_sentiment.py --input_file=tweets/tweets_db_clean.json --output
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world. Twitter.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada. Twitter.
 
-👉 [Click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/References.md) to access the complete list of references for this project.
+[⭐️ Click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/References.md) to access the complete list of references for this project.
 
 <br>
 
