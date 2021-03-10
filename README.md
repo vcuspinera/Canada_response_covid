@@ -56,7 +56,7 @@ With the snscrape package we download as many as 100,000 tweets per day for each
 
 Subsequently, we merged some selected columns of these files in one file named *tweets_db.json*
 
-[👉 click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) to see more details about how we download tweets with `snscrape`.
+[⭐️ click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) to see more details about how we download tweets with `snscrape`.
 
 ### Preprocessing tweets
 Our final step of this section was [preprocessing the tweets](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) to delete some of the sensible information as emails and urls.<sup><a name="myfootnote2">2</a></sup> You can run the preprocess.py script by writing in the Terminal at the main folder of this repository:
@@ -68,7 +68,7 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ## EDA
 When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, the [@Canada](https://twitter.com/Canada) account had between 29.1 and 62.4 thousand tweets per day, followed by [@JustinTrudeau](https://twitter.com/JustinTrudeau) in a range of 3.5 to 29.7 thousand tweets per day. With much fewer tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 131 and 1,207 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 105 and 1,188 tweets per day.
 
-<img src="img/EDA_1_tweets_per_day.png" width="550">
+<img src="img/EDA_1_tweets_per_day.png" width="600">
 
 Most tweets were written in English -around 85% -, followed by Spanish and French. Notice that there's a large number of tweets have with an undefined language. For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
@@ -79,16 +79,16 @@ When normalizing the number of tweets by account, we can identify the days with 
 </span>
 In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
 
-<img src="img/EDA_3_heatmap_weights.png" width="750">
+<img src="img/EDA_3_heatmap_weights.png" width="780">
 
-More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
+⭐️ More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
 ## Sentiment Analysis
 For sentiment analysis we select only tweets written in English, and use descriptive statistics based in counts of words, word clouds and scores get by [spaCy](https://spacy.io).
 
 When comparing word clouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
 
-<img src="img/sentiment_wordcloud.png" width="600">
+<img src="img/sentiment_wordcloud.png" width="650">
 
 Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>  
 
@@ -99,13 +99,13 @@ More importantly,
 here I would do something slightly different. I would not take the tweets before and after and divide them in 2 likt this. I think I would rather see a time series. So, I would prefer to see medians with bands that move through time (with a window average if it helps). This would help me better to "see" what happened. Maybe the difference was huge within 3 days and then it went back to normal?
 </span> 
 
-<img src="img/sentiment_polar_subject.png" width="700">
+<img src="img/sentiment_polar_subject.png" width="750">
 
 Finally, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
 
 <img src="img/sentiment_reactions.png" width="700">
 
-[👉 click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
+[⭐️ click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
 
 ## Final comments
 While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's announcement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 financial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the announcement; however, this event impact in the volume of tweets, actions and reactions of users.
@@ -158,7 +158,7 @@ python src/tweets_sentiment.py --input_file=tweets/tweets_db_clean.json --output
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world. Twitter.
 - [@GovCanHealth](https://twitter.com/govcanhealth?lang=en). Health Canada and Public Health Agency of Canada. Twitter.
 
-[Click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/References.md) to access the complete list of references for this project.
+[⭐️ Click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/References.md) to access the complete list of references for this project.
 
 <br>
 
