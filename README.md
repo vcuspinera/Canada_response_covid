@@ -22,11 +22,12 @@ To compare the tweets before and after Trudeau announcement, the first step was 
 
 ### Getting the tweets
 #### What didn't work: `Twitter API` and `GetOldTweets3` library
-Our first attempt was using the [Twitter API](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v1_TwitterAPI.ipynb). For this reason, we get a twitter developer's account<sup><a name="myfootnote1">1</a></sup>. However, the standard twitter developer's account only gives access to search historic databases with a 7-day limit, which means that I was not able to find tweets for a date older than one week, so this approach was not useful for the objective of our project.
+Our first attempt was using the [Twitter API](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v1_TwitterAPI.ipynb). For this reason, we get a twitter developer's account<sup><a name="myfootnote1">1</a></sup>. However, the standard twitter developer's account only gives access to search historic databases with a 7-day limit, which means we were not able to reach tweets that were older than a week and so this approach was discarded.
 
-For our second approach we used the [GetOldTweets3 library](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v2_GetOldTweets3.ipynb). This initially worked, however due the changes in Twitter's API in late 2020, GetOldTweets3 is no longer functioning.
+As a second approach we used the [GetOldTweets3 library](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v2_GetOldTweets3.ipynb), which initially gave us satisfactory results.
+However due the changes in Twitter's API in late 2020, GetOldTweets3 is no longer functioning.
 
-#### What worked for the project: `snscrape` library
+#### What worked for the current version of the project: `snscrape` library
 
 Our final and successful approach to get the wanted tweets was using the [snscrape](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). 
 <s>
