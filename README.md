@@ -30,9 +30,6 @@ However due the changes in Twitter's API in late 2020, GetOldTweets3 is no longe
 #### What worked for the current version of the project: `snscrape` library
 
 Our final and successful approach to get the wanted tweets was using the [snscrape](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb). 
-<s>
-This package allowed us to find old tweets as opposed to the free version of the API from twitter, and the GetOldTweets3 library that is non-currently working.
-</s>
 
 In this case, we use the development version of snscrape to access information directly from tweets instead of tweet URLs:
 ```
@@ -76,8 +73,7 @@ Most tweets were written in English -around 85% -, followed by Spanish and Frenc
 <img src="img/EDA_2_proportion_by_language.png" width="550">
 
 When normalizing the number of tweets by account, we can identify the days with more tweets. 
-<span style="color:orange"> maybe some moving average here would be better? a 3 day window should suffice although a 7 days window would help remove weekly seasonality.
-</span>
+__maybe some moving average here would be better? a 3 day window should suffice although a 7 days window would help remove weekly seasonality.__
 In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
 
 <img src="img/EDA_3_heatmap_weights.png" width="780">
@@ -95,12 +91,9 @@ Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `po
 
 In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skewed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the announcement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
 
-sdf
-<p style="color:blue">
-I think a log scale for this very plot would be better, cause they're just too close to each other and the range of values is very big. There are some subjectivity outliers around 0. Is this normal???
-More importantly,
-here I would do something slightly different. I would not take the tweets before and after and divide them in 2 likt this. I think I would rather see a time series. So, I would prefer to see medians with bands that move through time (with a window average if it helps). This would help me better to "see" what happened. Maybe the difference was huge within 3 days and then it went back to normal?
-</p> 
+1. **I think a log scale for this very plot would be better, cause they're just too close to each other and the range of values is very big.**
+2. **There are some subjectivity outliers around 0. Is this normal???**
+3. **More importantly,here I would do something slightly different. I would not take the tweets before and after and divide them in 2 like this. I think I would rather see a time series. So, I would prefer to see medians with bands that move through time (with a window average if it helps). This would help me better to "see" what happened. Maybe the difference was huge within 3 days and then it went back to normal?** 
 
 <img src="img/sentiment_polar_subject.png" width="750">
 
@@ -111,7 +104,7 @@ Finally, while the announcement didn't impact in the sentiment of tweets, it imp
 [⭐️ click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
 
 ## Final comments
-While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's announcement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 financial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the announcement; however, this event impact in the volume of tweets, actions and reactions of users.
+While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's announcement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 financial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the announcement; however, this event had impact in the volume of tweets, actions and reactions of users.
 
 ## Dependencies
 |Python packages|Python packages|
