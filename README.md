@@ -72,9 +72,10 @@ Most tweets were written in English -around 85% -, followed by Spanish and Frenc
 
 <img src="img/EDA_2_proportion_by_language.png" width="550">
 
-When normalizing the number of tweets by account, we can identify the days with more tweets. 
+We use Moving Averages with 7-day window, followed by normalizing the number of tweets by account. With this analysis we identify the days with more tweets, removing weekly seasonality. 
 __maybe some moving average here would be better? a 3 day window should suffice although a 7 days window would help remove weekly seasonality.__
-In the following plot we can identify a higher number of tweets in all Canadian Government's Twitter account between March 12 and March 29, 2020.
+
+In the following plot while @Canada tweets are homogeneous along the complete period of 61 days, in the case of the other three accounts (@CanadianPM, @GovCanHealth, and @JustinTrudeau) we can identify a higher number of tweets in between March 10th and April 10th, 2020.
 
 <img src="img/EDA_3_heatmap_weights.png" width="780">
 
