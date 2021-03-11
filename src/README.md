@@ -11,3 +11,8 @@ Brief overview of each script and jupyter notebook in this directory in the orde
 |3|[eda.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb) | notebook |Uses the preprocessed tweets to perform basic analysis and EDA. |
 |4|[tweets_sentiment.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py)| script |Script that use SpaCy sentiment analysis to get _polarity_ and _subjectivity_ of tweets. |
 |5|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) | notebook |Performs sentiment analysis on tweets using descriptive statistics based in counts of words, word clouds, polarity and subjectivity scores. |
+
+__Note__: If you are having problems opening any Jupyter Notebook, try to open it using [`nbviewer`](https://nbviewer.jupyter.org) online:
+1. Open the [`nbviewer`](https://nbviewer.jupyter.org/) webpage: "https://nbviewer.jupyter.org/"
+2. Paste the link of the Jypyter Notebook (e.g. "https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb")
+3. This will render the notebook! 🎉
