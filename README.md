@@ -72,12 +72,11 @@ Most tweets were written in English -around 85% -, followed by Spanish and Frenc
 
 <img src="img/EDA_2_proportion_by_language.png" width="550">
 
-We use Moving Averages with 7-day window, followed by normalizing the number of tweets by account. With this analysis we identify the days with more tweets, removing weekly seasonality. 
-__maybe some moving average here would be better? a 3 day window should suffice although a 7 days window would help remove weekly seasonality.__
+We calculate the Moving Averages with 7-day window, and normalize these averages by account using minimum and maximum number of tweets. With this analysis we identify the days with more tweets, removing weekly seasonality. 
 
-In the following plot while @Canada tweets are homogeneous along the complete period of 61 days, in the case of the other three accounts (@CanadianPM, @GovCanHealth, and @JustinTrudeau) we can identify a higher number of tweets in between March 10th and April 10th, 2020.
+In this plot we can identify an increase in number of tweets for all the Canadian Government's Twitter accounts around March 10th, 2020, with a peak of tweets between March 14th and 17th, decreasing from this point on until return to lower levels in mid-late April 2020.
 
-<img src="img/EDA_3_heatmap_weights.png" width="780">
+<img src="img/EDA_3_heatmap.png" width="780">
 
 ⭐️ More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
@@ -88,7 +87,7 @@ When comparing word clouds of tweets published before and after the announcement
 
 <img src="img/sentiment_wordcloud.png" width="650">
 
-Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`.<sup><a name="myfootnote3">3</a></sup>  
+Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `polarity` and `subjectivity`, by looking at the log number of tweets.<sup><a name="myfootnote3">3</a></sup>  
 
 In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skewed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the announcement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
 
