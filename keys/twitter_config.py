@@ -12,10 +12,10 @@
 # Keys and tokens
 # Keys, secret keys and access tokens management.
 my_keys = {
-    'consumer_key' : "",   # API key
-    'consumer_secret' : "",   # API secret key:
-    'access_token_key' : "",   # Access token:
-    'access_token_secret' : ""   # Access level: Read and write
+    'consumer_key' : "xzQYHoHXJcx29TMUjJ4QLnxH9",   # API key
+    'consumer_secret' : "Es6gAF423zG6GVqDT4MfqRUzaQACYDCM3HtRImVBJ3elRAdZjz",   # API secret key:
+    'access_token_key' : "104295581-MDvqPhWvIFgb8ppUpryJRoODdvHpxBfMhNyeUOnD",   # Access token:
+    'access_token_secret' : "XhNgKXPyBgCF0lGNqgkWGOSlYanlx5VYQF8I3bWeYI1t8"   # Access level: Read and write
 }
 
 for k in my_keys.values():
