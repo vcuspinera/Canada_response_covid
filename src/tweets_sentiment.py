@@ -41,14 +41,14 @@ def main(input_file, output_dir):
     df['day'] = [df['date'][i].strftime("%Y-%m-%d") for i in range(len(df))] # add day
     df['announcement'] = df['day'] >= "2020-03-27" # boolean variable of the Accouncement
     df = df[df['lang']=='en'].reset_index(drop=True) # select only tweets in English
-    # Note: We keep 83% of the tweets, and we could use different packages for sentiment 
+    # Note: We keep 85.5% of the tweets, and we could use different packages for sentiment 
     # analysis and tokens in English.
     my_size = len(df)
 
     # Run sentiment of tweets
     print('Sentiment: gets the polarity and subjectivity of tweets. ⚠️  this step could take time, please be patient.')
     i = 0
-    n = 300_000
+    n = 200_000
 
     for i in range(int(my_size / n) + 1):
         start_sub = time.time()

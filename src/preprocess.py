@@ -21,6 +21,7 @@ import os
 import re
 import spacy
 import string
+import time
 import en_core_web_sm
 nlp = en_core_web_sm.load()
 from docopt import docopt
@@ -30,6 +31,7 @@ opt = docopt(__doc__)
 
 def main(input_dir, output_dir):
     print("\n--- START: preprocess.py ---")
+    start = time.time()
 
     # Directories check    
     assert os.path.exists(input_dir), "The path entered for input_dir does not exist. Make sure to enter correct path \n"
@@ -47,6 +49,7 @@ def main(input_dir, output_dir):
     print('Saving: saves the preprocessed tweets')
     df_tot.drop('content', axis=1).to_json(output_dir + 'tweets_db_clean.json')
 
+    print("Total time: time used to run preprocess.py:", np.round((time.time() - start)/60, 2), "minutes.")
     print("--- END: preprocess.py ---\n")
     return
 
