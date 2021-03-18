@@ -9,8 +9,9 @@ Brief overview of each script and jupyter notebook in this directory in the orde
 |1C|[twitter-search_v3_snscrape.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) | notebook | 100-120 min. |Search for tweets using `snscrape` package. <br>✅ _Final and successful approach to download tweets._|
 |2|[preprocess.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) | script | 60-80 min. | Identify sensible information from tweets and performs the customed preprocess. |
 |3|[eda.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb) | notebook | 1 min. | Uses the preprocessed tweets to perform basic analysis and EDA. |
-|4|[tweets_sentiment.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py)| script | 140-150 min. | Script that use SpaCy sentiment analysis to get _polarity_ and _subjectivity_ of tweets. |
-|5|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) | notebook | 2 min. | Performs sentiment analysis on tweets using descriptive statistics based in counts of words, word clouds, polarity and subjectivity scores. |
+|4|[twitter_trend.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter_trend.ipynb)| notebook | 1 sec. | Script that use SpaCy sentiment analysis to get _polarity_ and _subjectivity_ of tweets. |
+|5|[tweets_sentiment.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py)| script | 140-150 min. | Script that use SpaCy sentiment analysis to get _polarity_ and _subjectivity_ of tweets. |
+|6|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) | notebook | 2 min. | Performs sentiment analysis on tweets using descriptive statistics based in counts of words, word clouds, polarity and subjectivity scores. |
 
 __Note__: If you are having problems opening any Jupyter Notebook, try to open it using [`nbviewer`](https://nbviewer.jupyter.org) online:
 1. Open the [`nbviewer`](https://nbviewer.jupyter.org/) webpage: "https://nbviewer.jupyter.org/"
