@@ -28,6 +28,7 @@
 - [Searching Raw Queries](https://python-twitter.readthedocs.io/en/latest/searching.html#raw-queries) in `python-twitter` library
 - [Search Tweets](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) by Twitter Developer
 - [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)
+- [GetDayTrends ow Twitter in Canada](https://getdaytrends.com/canada/)
 
 ### Government of Canada Official Twitter accounts
 - [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), account of Justin Trudeau as public person, and 23rd Prime Minister of Canada

@@ -64,17 +64,17 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ```
 
 ## EDA
-When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, the [@Canada](https://twitter.com/Canada) account had between 29.1 and 62.4 thousand tweets per day, followed by [@JustinTrudeau](https://twitter.com/JustinTrudeau) in a range of 3.5 to 29.7 thousand tweets per day. With much fewer tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 131 and 1,207 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 105 and 1,188 tweets per day.
+When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, the [@JustinTrudeau](https://twitter.com/JustinTrudeau) account had between 3.1 and 21.3 thousand tweets per day. With fewer tweets [@Canada](https://twitter.com/Canada) had between 103 and 469 tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 126 and 1,174 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 104 and 1,181 tweets per day.
 
 <img src="img/EDA_1_tweets_per_day.png" width="600">
 
-Most tweets were written in English -around 85% -, followed by Spanish and French. Notice that there's a large number of tweets have with an undefined language. For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
+Most tweets were written in English (`en`), which  represent 85.5% of all tweets. It follows a group of undefined language (`und`). The third and fourth languages in the database are French (`fr`) and Spanish (`es`). For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
 <img src="img/EDA_2_proportion_by_language.png" width="550">
 
 We calculate the Moving Averages with 7-day window, and normalize these averages by account using minimum and maximum number of tweets. With this analysis we identify the days with more tweets, removing weekly seasonality. 
 
-In this plot we can identify an increase in number of tweets for all the Canadian Government's Twitter accounts around March 10th, 2020, with a peak of tweets between March 14th and 17th, decreasing from this point on until return to lower levels in mid-late April 2020.
+In this plot we can identify an increase in number of tweets for all the Canadian Government's Twitter accounts around March 10th, 2020, with a peak of tweets between March 14th and 17th, decreasing from this point on until return to lower levels in mid April 2020.
 
 <img src="img/EDA_3_heatmap.png" width="780">
 
