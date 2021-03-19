@@ -28,7 +28,7 @@
 - [Searching Raw Queries](https://python-twitter.readthedocs.io/en/latest/searching.html#raw-queries) in `python-twitter` library
 - [Search Tweets](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) by Twitter Developer
 - [Authentication](https://developer.twitter.com/en/docs/basics/authentication/overview)
-- [GetDayTrends ow Twitter in Canada](https://getdaytrends.com/canada/)
+- [GetDayTrends on Twitter in Canada](https://getdaytrends.com/canada/)
 
 ### Government of Canada Official Twitter accounts
 - [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), account of Justin Trudeau as public person, and 23rd Prime Minister of Canada
@@ -41,6 +41,7 @@
 - [How to Scrape Tweets with snscrape](https://medium.com/better-programming/how-to-scrape-tweets-with-snscrape-90124ed006af), Medium
 - [Stay connected with Government of Canada](https://www.international.gc.ca/gac-amc/contact-contactez/social-media_medias-sociaux.aspx?lang=eng), Social Media Official Accounts
 - [Where to get Twitter data for academic research](https://gwu-libraries.github.io/sfm-ui/posts/2017-09-14-twitter-data), by Justin Littman
+- [Timeline of the COVID-19 pandemic in Canada](https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Canada?fbclid=IwAR3_8GonnYCyH9lT_aWIYD9AiZEPKQ4pC0yMmY1gwWE1xKu04ksT3ixkNlU), Wikipedia
 
 ### Government of Canada annoucements
 - March 11, 2020. Prime Minister outlines Canada’s COVID-19 response: [official announce](https://pm.gc.ca/en/news/news-releases/2020/03/11/prime-minister-outlines-canadas-covid-19-response), [video](https://youtu.be/YunI2PNZKxg).
