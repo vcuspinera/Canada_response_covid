@@ -10,5 +10,5 @@ Additionally to this _README.md_ and _twitter_supported_languages.csv_ files, af
 - 360 JSON files with the raw tweets from the the four official Canadian Government accounts mentioned above.
 - `tweets_db.json` file that gather the 360 previous files in one total document, selecting some of the variables useful for the analysis.
 - `tweets_db_clean.json` file with the preprocessed tweets from `tweets_db.json`.
-- 10 JSON files named as `tweets_sentiment_X.json` with the preprocessed tweets in english, that cointain the scores for sentiment analysis of tweets.
+- 4 JSON files named as `tweets_sentiment_X.json` with the preprocessed tweets in english, that cointain the scores for sentiment analysis of tweets.
 - `tweets_db_sentiment.json` merges the ten previous files that contain twees' sentiment in one file.
