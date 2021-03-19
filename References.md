@@ -39,6 +39,10 @@
 ### News and Articles
 - [How to Scrape Tweets from Twitter](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1), Towards Data Science
 - [How to Scrape Tweets with snscrape](https://medium.com/better-programming/how-to-scrape-tweets-with-snscrape-90124ed006af), Medium
-- [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
 - [Stay connected with Government of Canada](https://www.international.gc.ca/gac-amc/contact-contactez/social-media_medias-sociaux.aspx?lang=eng), Social Media Official Accounts
 - [Where to get Twitter data for academic research](https://gwu-libraries.github.io/sfm-ui/posts/2017-09-14-twitter-data), by Justin Littman
+
+### Government of Canada annoucements
+- March 11, 2020. Prime Minister outlines Canada’s COVID-19 response: [official announce](https://pm.gc.ca/en/news/news-releases/2020/03/11/prime-minister-outlines-canadas-covid-19-response), [video](https://youtu.be/YunI2PNZKxg).
+- March 13, 2020. Prime Minister Trudeau updates Canadians on COVID-19: [official announce](https://pm.gc.ca/en/news/news-releases/2020/03/13/first-ministers-discuss-collective-efforts-address-impact-covid-19), [video](https://youtu.be/u70pUm7xHo0).
+- March 27, 2020. Prime Minister announces support for small businesses facing impacts of COVID‑19: [official announce](https://pm.gc.ca/en/news/news-releases/2020/03/27/prime-minister-announces-support-small-businesses-facing-impacts), [video](https://youtu.be/1o-tV0A87l8).
