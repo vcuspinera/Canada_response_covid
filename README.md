@@ -13,12 +13,12 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 |Leopoldo Cuspinera | [cuspime](https://github.com/cuspime) | [<img src="/img/logo_cuspime.png" width=15%>](https://cuspime.github.io) |
 
 ## Overview
-The idea of this project was born after March 27th, 2020, when the Prime Minister of Canada, Justin Trudeau, [announced a series of policies facing impacts of Covid-19](https://youtu.be/1o-tV0A87l8) to support small businesses and their employees.  
+The idea of this project was born on March 2020, when the Prime Minister of Canada, Justin Trudeau, announced a series of policies to help Canadians cope with the COVID-19. While the first annoucement on [March 11th, 2020, outlined Canada’s whole-of-government response to COVID-19 outbreak](https://youtu.be/YunI2PNZKxg), in the posterior press conferences of [March 13th](https://www.youtube.com/watch?v=u70pUm7xHo0&t=38s) and [March 27th](https://youtu.be/1o-tV0A87l8) the Prime Minister announced the how stimulus package would be address to those affected by the pandemic as small bussiness and employees.
 
 The objective of this project is to analyse the Canadian Government response to Covid-19 through the perception of the people by making sentiment analysis on people's tweets mentioning Canadian Government's accounts as [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en).
 
 ## Retrieving tweets
-To compare the tweets before and after Trudeau announcement, the first step was getting the tweets from March 1st to April 30th, from the four official-accounts selected from the Government of Canada.
+To compare the tweets before and after Trudeau announcement, the first step was getting the tweets from February 1st to April 30th, from the four accounts of the Canadian Government mentioned in the previous section.
 
 ### Getting the tweets
 #### What didn't work: `Twitter API` and `GetOldTweets3` library
@@ -44,13 +44,13 @@ import os
 import pandas as pd
 
 # Use OS library to call snscrape with CLI in Python and save tweets
-os.system("snscrape --jsonl --max-results 1_000 --since 2020-05-01 twitter-search 'JustinTrudeau until:2020-05-02' > ../tweets/JustinTrudeau_2020-05-01.json")
+os.system("snscrape --jsonl --max-results 1_000 --since 2020-02-01 twitter-search 'JustinTrudeau until:2020-02-02' > ../tweets/JustinTrudeau_2020-02-01.json")
 
 # Call tweet's json files as Data Frame
-df = pd.read_json('../tweets/JustinTrudeau_2020-05-01.json', lines=True)
+df = pd.read_json('../tweets/JustinTrudeau_2020-02-01.json', lines=True)
 ```
 
-With the snscrape package we download as many as 100,000 tweets per day for each Twitter account of the Government of Canada. This means that we got 244 `JSON` files, and stored them in [the _tweets_ folder](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets) of this repository.
+With the snscrape package we download as many as 100,000 tweets per day for each Twitter account of the Government of Canada. This means that we got 360 `JSON` files, and stored them in [the _tweets_ folder](https://github.com/vcuspinera/Canada_response_covid/tree/master/tweets) of this repository.
 
 Subsequently, we merged some selected columns of these files in one file named *tweets_db.json*
 
@@ -64,17 +64,19 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ```
 
 ## EDA
-When comparing the tweets per day by Canadian Government Twitter accounts, we find that between March and April 2020, the [@JustinTrudeau](https://twitter.com/JustinTrudeau) account had between 3.1 and 21.3 thousand tweets per day. With fewer tweets [@Canada](https://twitter.com/Canada) had between 103 and 469 tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 126 and 1,174 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 104 and 1,181 tweets per day.
+When comparing the tweets per day by Canadian Government Twitter accounts, we find that between February and April 2020, the [@JustinTrudeau](https://twitter.com/JustinTrudeau) account had between 3.0 and 21.4 thousand tweets per day. With fewer tweets [@Canada](https://twitter.com/Canada) had between 98 and 470 tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 104 and 1,179 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 30 and 1,182 tweets per day.
 
 <img src="img/EDA_1_tweets_per_day.png" width="600">
 
-Most tweets were written in English (`en`), which  represent 85.5% of all tweets. It follows a group of undefined language (`und`). The third and fourth languages in the database are French (`fr`) and Spanish (`es`). For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
+In this section we identify that tweets mainly in English (`en`), that represents 85.5% of all tweets. It follows a group of undefined language (`und`) with 8.2%. The third and fourth languages in the database are French (`fr`) with 3.5% and Spanish (`es`) with 1.2%
+
+Most tweets were written in English (`en`), which  represent 85.5% of all tweets. It follows a group of undefined language (`und`) with 8.2%. The third and fourth languages in the database are French (`fr`) with 3.5% and Spanish (`es`) with 1.2%. For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
 <img src="img/EDA_2_proportion_by_language.png" width="550">
 
 We calculate the Moving Averages with 7-day window, and normalize these averages by account using minimum and maximum number of tweets. With this analysis we identify the days with more tweets, removing weekly seasonality. 
 
-In this plot we can identify an increase in number of tweets for all the Canadian Government's Twitter accounts around March 10th, 2020, with a peak of tweets between March 14th and 17th, decreasing from this point on until return to lower levels in mid April 2020.
+In this plot we can identify an increase in number of tweets for all the Canadian Government's Twitter accounts around March 11th, 2020, with a peak of tweets between March 14th and 17th, decreasing from this point on until return to lower levels in mid April 2020.
 
 <img src="img/EDA_3_heatmap.png" width="780">
 
@@ -91,20 +93,33 @@ Additionally, we explore sentiment analysis with [spaCy](https://spacy.io)'s `po
 
 In this case, we observe that the information from tweets before and after the announcement have very similar Polarity and Subjectivity curves. Talking about polarity, in both groups we see mainly neutral tweets skewed to be positive. In the other hand, these tweets were much more objective than subjective. We also perform hypothesis testing polarity and subjectivity on tweets before and after the announcement on sub-samples of tweets, but we couldn't reject that both means of these measures were different.
 
-1. **I think a log scale for this very plot would be better, cause they're just too close to each other and the range of values is very big.**
-2. **There are some subjectivity outliers around 0. Is this normal???**
-3. **More importantly,here I would do something slightly different. I would not take the tweets before and after and divide them in 2 like this. I think I would rather see a time series. So, I would prefer to see medians with bands that move through time (with a window average if it helps). This would help me better to "see" what happened. Maybe the difference was huge within 3 days and then it went back to normal?** 
-
 <img src="img/sentiment_polar_subject.png" width="750">
 
-Finally, while the announcement didn't impact in the sentiment of tweets, it impacted in the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes, as we can find in the next plot.
+We also use Time Series find the Trend of polarity and number of tweets. From this analysis, we find that before March 11th the trend polarity average of @Canada was the higher to the period after the annoucement. In contrast, the trend of polarity average was lower before than after the annoucement for the @CanadianPM and @JustinTrudeau accounts. In addition, the @GovCanHealth had almost the same levels.
+
+In short, while the trend in sentiment decrease because for @Canada account, weets related with the Canadian Prime Minister (@CanadianPM and @JustinTrudeau) had a possitive impact after the annoucement.
+
+<img src="img/sentiment_trend.png" width="750">
+
+Finally, the announcement also impacted in the volume of tweets, as well the actions and reactions of users increasing the number of likes, replies, retweets and quotes.
+
+<img src="img/sentiment_volume.png" width="700">
 
 <img src="img/sentiment_reactions.png" width="700">
 
 [⭐️ click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
 
 ## Final comments
-While the aim of this project was to compare the sentiment analysis of people before and after Trudeau's announcement on March 27th, 2020, where the Canadian Government was willing to support small businesses and employees after Covid-19 financial impact. We found out that the sentiment analysis didn't show any difference on tweets sent before and after the announcement; however, this event had impact in the volume of tweets, actions and reactions of users.
+The aim of this project was to measure the impact of the Government policies to help Canadians cope with the COVID-19.
+
+For this reason, we compare the sentiment analysis on Canadians before and after Trudeau's first announcement on March 11<sup>th</sup>, 2020, where the Prime Minister outlined Canada’s whole-of-government response to COVID-19 outbreak.
+
+To measure this impact download tweets from February 1<sup>st</sup> to April 30<sup>th</sup> mentioning any of the four selected Canadian Government's Twitter accounts ([@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en)), and compare the polarity and subjectivity of tweets published before and after the announcement.
+
+On the analysis we find that the announcement on March 11<sup>th</sup>, and the following announcements of the Government policies related with COVID-19, had an impact in the volume and sentiment of tweets: 
+
+- __Sentiment__: while the overall sentiment of tweets is positive, the announcement had different effect for the Government accounts. While the effect on @Canada account was a decrease in the average polarity, in the other hand we identify a rise in the positive sentiment of tweets related with the Canadian Prime Minister (which means an increase in the polarity levels of @CanadianPM and @JustinTrudeau accounts). The @GovCanHealth account was stable in polarity level before and after the announcement. 
+- __Volume__: we observed an increase in the total number of tweets and the average tweets per day. Also, the noncement affected the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes.
 
 ## Dependencies
 |Python packages|Python packages|
@@ -132,23 +147,25 @@ To replicate the analysis, clone this GitHub repository and follow the next step
 2. Open [`twitter-search_v2_GetOldTweets3.ipynb`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter-search_v3_snscrape.ipynb) notebook located in the _src_ folder, and run all cells.
 
 3. Run the Python script [`preprocess.py`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/preprocess.py) in the terminal from the root directory of this project to identify and delete sensible information.
-_⚠️ Caution: this process take around one hour._
+_⚠️ Caution: [this process take close to two hours.](https://github.com/vcuspinera/Canada_response_covid/blob/master/img/preprocess_times.png)_
 ```
 python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ```
 
 4. Open and run [`eda.ipynb`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb) notebook located in the _src_ folder.
 
-5. Run the Python script [`tweets_sentiment.py`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py) in the terminal to select only tweets written in English and add Polarity and Subjectivity scores from spaCy.  
+5. Open and run [`twitter_trend.ipynb`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter_trend.ipynb) notebook.
+
+6. Run the Python script [`tweets_sentiment.py`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py) in the terminal to select only tweets written in English and add Polarity and Subjectivity scores from spaCy.  
 _⚠️ Caution: [this process take a long time to run it, in my case it took 13 hr.](https://github.com/vcuspinera/Canada_response_covid/blob/master/img/tweets_sentiment_times.png)_
 ```
 python src/tweets_sentiment.py --input_file=tweets/tweets_db_clean.json --output_dir=tweets/
 ```
 
-6. Open and run [`sentiment_analysis.ipynb`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) notebook.
+7. Open and run [`sentiment_analysis.ipynb`](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) notebook.
 
 ## Main references
-- [Justin Trudeau – Prime Minister of Canada. (March 27, 2020). *Announcing support for small businesses facing impacts of COVID-19*. Retrieved: 2019-05-18](https://youtu.be/1o-tV0A87l8)
+- Prime Minister outlines Canada’s COVID-19 response, on March 11 of 2020: [official announce](https://pm.gc.ca/en/news/news-releases/2020/03/11/prime-minister-outlines-canadas-covid-19-response) and [video](https://youtu.be/YunI2PNZKxg).
 - [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20). Official account of Justin Trudeau as public person, and 23rd Prime Minister of Canada. Twitter.
 - [@CanadianPM](https://twitter.com/CanadianPM). Official account of the Prime Minister of Canada. Twitter.
 - [@Canada](https://twitter.com/canada?lang=en). Showcasing Canada to the world. Twitter.

@@ -39,7 +39,7 @@ def main(input_file, output_dir):
     # Add variables
     print("Variables: add date, announcement, and select only english tweets.") 
     df['day'] = [df['date'][i].strftime("%Y-%m-%d") for i in range(len(df))] # add day
-    df['announcement'] = df['day'] >= "2020-03-27" # boolean variable of the Accouncement
+    df['announcement'] = ["before" if i<"2020-03-11" else "after" for i in df['day']] # boolean variable of the Accouncement
     df = df[df['lang']=='en'].reset_index(drop=True) # select only tweets in English
     # Note: We keep 85.5% of the tweets, and we could use different packages for sentiment 
     # analysis and tokens in English.
