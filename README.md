@@ -93,9 +93,9 @@ In this case, we observe that the information from tweets before and after the a
 
 <img src="img/sentiment_polar_subject.png" width="750">
 
-We also use Time Series find the Trend of polarity and number of tweets. From this analysis, we find that before March 11th the trend polarity average of @Canada was the higher to the period after the announcement. In contrast, the trend of polarity average was lower before than after the announcement for the @CanadianPM and @JustinTrudeau accounts. In addition, the @GovCanHealth had almost the same levels.
+We also use Time Series find the Trend of polarity and number of tweets. From this analysis, we find that before March 11th the trend polarity average of [@Canada](https://twitter.com/canada?lang=en) was the higher to the period after the announcement. In contrast, the trend of polarity average was lower before than after the announcement for the [@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) accounts. In addition, the [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) had almost the same levels.
 
-In short, while the trend in sentiment decrease because for @Canada account, tweets related with the Canadian Prime Minister (@CanadianPM and @JustinTrudeau) had a positive impact after the announcement.
+In short, while the trend in sentiment decrease because for [@Canada](https://twitter.com/canada?lang=en) account, tweets related with the Canadian Prime Minister ([@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20)) had a positive impact after the announcement.
 
 <img src="img/sentiment_trend.png" width="750">
 
@@ -116,7 +116,7 @@ To measure this impact download tweets from February 1<sup>st</sup> to April 30<
 
 On the analysis we find that the announcement on March 11<sup>th</sup>, and the following announcements of the Government policies related with COVID-19, had an impact in the volume and sentiment of tweets: 
 
-- __Sentiment__: while the overall sentiment of tweets is positive, the announcement had different effect for the Government accounts. While the effect on @Canada account was a decrease in the average polarity, in the other hand we identify a rise in the positive sentiment of tweets related with the Canadian Prime Minister (which means an increase in the polarity levels of @CanadianPM and @JustinTrudeau accounts). The @GovCanHealth account was stable in polarity level before and after the announcement. 
+- __Sentiment__: while the overall sentiment of tweets is positive, the announcement had different effect for the Government accounts. While the effect on [@Canada](https://twitter.com/canada?lang=en) account was a decrease in the average polarity, in the other hand we identify a rise in the positive sentiment of tweets related with the Canadian Prime Minister (which means an increase in the polarity levels of [@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) accounts). The [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) account was stable in polarity level before and after the announcement. 
 - __Volume__: we observed an increase in the total number of tweets and the average tweets per day. Also, the noncement affected the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes.
 
 ## Dependencies
