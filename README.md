@@ -81,7 +81,7 @@ In this plot we can identify an increase in number of tweets for all the Canadia
 ⭐️ More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
 ## Sentiment Analysis
-For sentiment analysis we select only tweets written in English, and use descriptive statistics based in counts of words, word clouds and scores get by [spaCy](https://spacy.io).
+For the sentiment analysis we select only tweets written in English, and use descriptive statistics based in counts of words, word clouds, time series and scores get by [spaCy](https://spacy.io).
 
 When comparing word clouds of tweets published before and after the announcement, we observe that the most used words and their repetitions are very similar among both groups.
 
@@ -93,9 +93,9 @@ In this case, we observe that the information from tweets before and after the a
 
 <img src="img/sentiment_polar_subject.png" width="750">
 
-We also use Time Series find the Trend of polarity and number of tweets. From this analysis, we find that before March 11th the trend polarity average of [@Canada](https://twitter.com/canada?lang=en) was the higher to the period after the announcement. In contrast, the trend of polarity average was lower before than after the announcement for the [@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) accounts. In addition, the [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) had almost the same levels.
+We also use Time Series to find the Trend of polarity and number of tweets. From this analysis, we find that before March 11th the trend polarity average of [@Canada](https://twitter.com/canada?lang=en) was the higher to the period after the announcement. In contrast, the trend of polarity average was lower before than after the announcement for the [@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) accounts. In addition, the [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) had almost the same levels.
 
-In short, while the trend in sentiment decrease because for [@Canada](https://twitter.com/canada?lang=en) account, tweets related with the Canadian Prime Minister ([@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20)) had a positive impact after the announcement.
+In short, while the trend in sentiment decrease for the [@Canada](https://twitter.com/canada?lang=en) account, tweets related with the Canadian Prime Minister ([@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20)) had a positive impact after the announcement.
 
 <img src="img/sentiment_trend.png" width="750">
 
