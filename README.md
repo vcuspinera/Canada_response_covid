@@ -66,17 +66,17 @@ python src/preprocess.py --input_dir=tweets/ --output_dir=tweets/
 ## EDA
 When comparing the tweets per day by Canadian Government Twitter accounts, we find that between February and April 2020, the [@JustinTrudeau](https://twitter.com/JustinTrudeau) account had between 3.0 and 21.4 thousand tweets per day. With fewer tweets [@Canada](https://twitter.com/Canada) had between 98 and 470 tweets, [@CanadianPM](https://twitter.com/CanadianPM) had between 104 and 1,179 tweets, and [@GovCanHealth](https://twitter.com/GovCanHealth) between 30 and 1,182 tweets per day.
 
-<img src="img/EDA_1_tweets_per_day.png" width="600">
+<img src="img/EDA_1_tweets_per_day.png" width="650">
 
 Most tweets were written in English (`en`), which  represent 85.5% of all tweets. It follows a group of undefined language (`und`) with 8.2%. The third and fourth languages in the database are French (`fr`) with 3.5% and Spanish (`es`) with 1.2%. For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
-<img src="img/EDA_2_proportion_by_language.png" width="550">
+<img src="img/EDA_2_proportion_by_language.png" width="600">
 
 We calculate the Moving Averages with 7-day window, and normalize these averages by account using minimum and maximum number of tweets. With this analysis we identify the days with more tweets, removing weekly seasonality. 
 
 In this plot we can identify an increase in number of tweets for all the Canadian Government's Twitter accounts around March 11th, 2020, with a peak of tweets between March 14th and 17th, decreasing from this point on until return to lower levels in mid-April 2020.
 
-<img src="img/EDA_3_heatmap.png" width="780">
+<img src="img/EDA_3_heatmap.png" width="820">
 
 ⭐️ More details of the basic analysis and EDA of this report are available [in this link](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/eda.ipynb).
 
