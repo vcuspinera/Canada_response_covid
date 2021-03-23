@@ -16,7 +16,7 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 
 ## Overview
 
-> “Our message to Canadians is clear: to every worker and business, in every province and territory, we have your back and we will get through this together.”  
+> <span style='color:black'>“Our message to Canadians is clear: to every worker and business, in every province and territory, we have your back and we will get through this together.”</span>  
 > _<span style='color:gray; text-shadow: 0px 0px 30px pink'>— Justin Trudeau, Prime Minister of Canada</span>_
 
 The idea of this project was born on March 2020, when the Prime Minister of Canada, Justin Trudeau, announced a series of policies to help Canadians cope with the COVID-19. While the first announcement on **March 11th, 2020** outlined [Canada’s whole-of-government response to COVID-19 outbreak](https://youtu.be/YunI2PNZKxg), posterior press conferences on [March 13th](https://www.youtube.com/watch?v=u70pUm7xHo0&t) and [March 27th](https://youtu.be/1o-tV0A87l8), the Prime Minister announced a stimulus package would be addressed to those affected by the pandemic amongst whom small businesses and employees.
@@ -115,7 +115,7 @@ Finally, the announcement also impacted in the volume of tweets, as well the act
 
 <img src="img/sentiment_reactions.png" width="700">
 
-[⭐️ click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see more details about the sentiment analysis.
+[⭐️ click here](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) to see the notebook with the complete Sentiment Analysis.
 
 ## Final comments
 The aim of this project was to measure the impact of the Government policies to help Canadians cope with the COVID-19.
