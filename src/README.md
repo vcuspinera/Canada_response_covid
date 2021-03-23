@@ -12,7 +12,7 @@ Brief overview of each script and jupyter notebook in this directory in the orde
 |4|[twitter_trend.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/twitter_trend.ipynb)| notebook | 1 sec. | Explores Twitter Trends in Canada from March 10 to March 19, 2020, from the `GetDayTrends` webpage. |
 |5|[cleaning_adds.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/cleaning_adds.ipynb)| notebook | 15 sec. | Look for Twitter's usernames published adds or repeats the same tweet several times. |
 |6|[tweets_sentiment.py](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/tweets_sentiment.py)| script | 200-210 min. | Script that use SpaCy sentiment analysis to get _polarity_ and _subjectivity_ of tweets. |
-|7|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) | notebook | 1-2 min. | Performs sentiment analysis on tweets using descriptive statistics based in counts of words, word clouds, polarity and subjectivity scores. |
+|7|[sentiment_analysis.ipynb](https://github.com/vcuspinera/Canada_response_covid/blob/master/src/sentiment_analysis.ipynb) | notebook | 2-3 min. | Performs sentiment analysis on tweets using descriptive statistics based in counts of words, word clouds, tokens, polarity and subjectivity scores, time series, hypothesis testing, ETS decomposition, and volume of tweets and actions as replies, retweets, likes and quote.|
 
 __Note__: If you are having problems opening any Jupyter Notebook, try to open it using [`nbviewer`](https://nbviewer.jupyter.org) online:
 1. Open the [`nbviewer`](https://nbviewer.jupyter.org/) webpage: "https://nbviewer.jupyter.org/"
