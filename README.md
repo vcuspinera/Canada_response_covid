@@ -13,12 +13,12 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 |Leopoldo Cuspinera | [cuspime](https://github.com/cuspime) | [<img src="/img/logo_cuspime.png" width=15%>](https://cuspime.github.io) |
 
 ## Overview
-The idea of this project was born on March 2020, when the Prime Minister of Canada, Justin Trudeau, announced a series of policies to help Canadians cope with the COVID-19. While the first announcement on **March 11th, 2020** outlined [Canada’s whole-of-government response to COVID-19 outbreak](https://youtu.be/YunI2PNZKxg), posterior press conferences on [March 13th](https://www.youtube.com/watch?v=u70pUm7xHo0&t) and [March 27th](https://youtu.be/1o-tV0A87l8), the Prime Minister announced a stimulus package would be addressed to those affected by the pandemic amongst whom small businesses and employees.
+The idea of this project was born on March 2020, when the Prime Minister of Canada, Justin Trudeau, announced a series of policies to help Canadians cope with the Covid-19. While the first announcement on **March 11th, 2020** outlined [Canada’s whole-of-government response to COVID-19 outbreak](https://youtu.be/YunI2PNZKxg), posterior press conferences on [March 13th](https://www.youtube.com/watch?v=u70pUm7xHo0&t) and [March 27th](https://youtu.be/1o-tV0A87l8), the Prime Minister announced a stimulus package would be addressed to those affected by the pandemic amongst whom small businesses and employees.
 
 The main objective of this project is to analyse how people perceived the canadian governmental response to the pandemia by making a sentiment analysis on people's tweets mentioning Canadian Government's accounts as [@Canada](https://twitter.com/canada?lang=en), [@CanadianPM](https://twitter.com/CanadianPM), [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en).
 
 ## Downloading tweets
-To compare the public opinion before and after Trudeau's announcement in the twittersphere, the first obvious step is getting the tweets. We decided to make a thorough scrapping of tweets from February 1st 2020 to April 30th 2020 that mentioned at least one of the four aforementioned accounts of the Canadian Government.
+To compare the public opinion before and after Trudeau's announcement in the Twittersphere, the first obvious step is getting the tweets. We decided to make a thorough scrapping of tweets from February 1st 2020 to April 30th 2020 that mentioned at least one of the four aforementioned accounts of the Canadian Government.
 
 ### Getting the tweets
 #### What didn't work: `Twitter API` and `GetOldTweets3` library
@@ -75,7 +75,7 @@ In this plot we can identify an increase in number of tweets for all the Canadia
 
 <img src="img/EDA_3_heatmap.png" width="820">
 
-Now, when making sentiment analyses we must first know what languages we will be considering. For this project, most of the scrapped tweets were written in **English** (`en`): about **85.5%** of all tweets. Followed by a group of undefined language (`und`) tweets that amount to 8.2% of the total. The third and fourth languages in the database are French (`fr`) with 3.5% and Spanish (`es`) with 1.2%. For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
+Now, when making sentiment analyses, we must first know what languages we will be considering. For this project, most of the scrapped tweets were written in **English** (`en`): about **85.5%** of all tweets. Followed by a group of undefined language (`und`) tweets that amount to 8.2% of the total. The third and fourth languages in the database are French (`fr`) with 3.5% and Spanish (`es`) with 1.2%. For the main analysis we used tweets wrote in English. This enhanced the reach of powerful tools like [spacy](https://spacy.io), [textblob](https://textblob.readthedocs.io/en/dev/) and [wordcloud](https://amueller.github.io/word_cloud/index.html), mainly developed for this language.
 
 <img src="img/EDA_2_proportion_by_language.png" width="600">
 
@@ -88,7 +88,7 @@ When comparing word clouds of tweets published before and after the announcement
 
 <img src="img/sentiment_wordcloud.png" width="650">
 
-Wordclouds are always nice but they hardly tell us anything about the trends or distribuition in opinions. For our sentiment analysis we made use of [spaCy](https://spacy.io)'s modules to extract the `polarity` and `subjectivity` of texts.<sup><a name="myfootnote3">3</a></sup>  
+Wordclouds are always nice but they hardly tell us anything about the trends or distribution in opinions. For our sentiment analysis we made use of [spaCy](https://spacy.io)'s modules to extract the `polarity` and `subjectivity` of texts.<sup><a name="myfootnote3">3</a></sup>  
 
 As wee can see in the plot below, the information conveyed by the downloaded tweets before and after the announcement provide very similar Polarity and Subjectivity curves. 
 We would like you to first pay attention to the Subjectivity plot on the right. Notice the huge outlier on the left-hand side when subjectivity equals 0. This tells us that there are many tweets that give no opinion and are only informative, they are not biased to give a positive or negative opinion in any sense whatsoever. There is also an outlier when subjectivity equals one, which means they portray pure sentiment. 
@@ -116,9 +116,9 @@ The aim of this project was to measure the impact of the Government policies to 
 
 For this reason, we compare the sentiment analysis on Canadians before and after Trudeau's first announcement on March 11<sup>th</sup>, 2020, where the Prime Minister outlined Canada’s whole-of-government response to COVID-19 outbreak.
 
-To measure this impact download tweets from February 1<sup>st</sup> to April 30<sup>th</sup> mentioning any of the four selected Canadian Government's Twitter accounts ([@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en)), and compare the polarity and subjectivity of tweets published before and after the announcement.
+To measure this impact we download tweets from February 1<sup>st</sup> to April 30<sup>th</sup> mentioning any of the four selected Canadian Government's Twitter accounts ([@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en)), and compare the polarity and subjectivity of tweets published before and after the announcement.
 
-On the analysis we find that the announcement on March 11<sup>th</sup>, and the following announcements of the Government policies related with COVID-19, had an impact in the volume and sentiment of tweets: 
+On the analysis we find that the announcement on March 11<sup>th</sup>, and the following announcements of the Government policies related with Covid-19, had an impact in the sentiment of tweets and their volume: 
 
 - __Sentiment__: while the overall sentiment of tweets is positive, the announcement had different effect for the Government accounts. While the effect on [@Canada](https://twitter.com/canada?lang=en) account was a decrease in the average polarity, in the other hand we identify a rise in the positive sentiment of tweets related with the Canadian Prime Minister (which means an increase in the polarity levels of [@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) accounts). The [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) account was stable in polarity level before and after the announcement. 
 - __Volume__: we observed an increase in the total number of tweets and the average tweets per day. Also, the noncement affected the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes.
