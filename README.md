@@ -1,7 +1,7 @@
 <img src="img/logo_canada_word_cloud.png" width="180" align = "right">
 
-# Canada response to Covid-19
-*Sentiment analysis of people's tweets referring to Canadian Government's accounts after Government announcement of policies as response of Covid-19.*
+# Canada response to COVID-19
+*Sentiment analysis of people's tweets referring to Canadian Government's accounts after Government announcement of policies as response of COVID-19.*
 
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,8 +12,14 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 |Victor Cuspinera | [vcuspinera](https://github.com/vcuspinera) | [<img src="/img/logo_vcuspinera.png" width=15%/>](https://vcuspinera.github.io) |
 |Leopoldo Cuspinera | [cuspime](https://github.com/cuspime) | [<img src="/img/logo_cuspime.png" width=15%>](https://cuspime.github.io) |
 
+<br>
+
 ## Overview
-The idea of this project was born on March 2020, when the Prime Minister of Canada, Justin Trudeau, announced a series of policies to help Canadians cope with the Covid-19. While the first announcement on **March 11th, 2020** outlined [Canada’s whole-of-government response to COVID-19 outbreak](https://youtu.be/YunI2PNZKxg), posterior press conferences on [March 13th](https://www.youtube.com/watch?v=u70pUm7xHo0&t) and [March 27th](https://youtu.be/1o-tV0A87l8), the Prime Minister announced a stimulus package would be addressed to those affected by the pandemic amongst whom small businesses and employees.
+
+> “Our message to Canadians is clear: to every worker and business, in every province and territory, we have your back and we will get through this together.”  
+> _<span style='color:gray; text-shadow: 0px 0px 30px pink'>— Justin Trudeau, Prime Minister of Canada</span>_
+
+The idea of this project was born on March 2020, when the Prime Minister of Canada, Justin Trudeau, announced a series of policies to help Canadians cope with the COVID-19. While the first announcement on **March 11th, 2020** outlined [Canada’s whole-of-government response to COVID-19 outbreak](https://youtu.be/YunI2PNZKxg), posterior press conferences on [March 13th](https://www.youtube.com/watch?v=u70pUm7xHo0&t) and [March 27th](https://youtu.be/1o-tV0A87l8), the Prime Minister announced a stimulus package would be addressed to those affected by the pandemic amongst whom small businesses and employees.
 
 The main objective of this project is to analyse how people perceived the canadian governmental response to the pandemia by making a sentiment analysis on people's tweets mentioning Canadian Government's accounts as [@Canada](https://twitter.com/canada?lang=en), [@CanadianPM](https://twitter.com/CanadianPM), [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en).
 
@@ -118,7 +124,7 @@ For this reason, we compare the sentiment analysis on Canadians before and after
 
 To measure this impact we download tweets from February 1<sup>st</sup> to April 30<sup>th</sup> mentioning any of the four selected Canadian Government's Twitter accounts ([@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20), [@CanadianPM](https://twitter.com/CanadianPM), [@Canada](https://twitter.com/canada?lang=en) and [@GovCanHealth](https://twitter.com/govcanhealth?lang=en)), and compare the polarity and subjectivity of tweets published before and after the announcement.
 
-On the analysis we find that the announcement on March 11<sup>th</sup>, and the following announcements of the Government policies related with Covid-19, had an impact in the sentiment of tweets and their volume: 
+On the analysis we find that the announcement on March 11<sup>th</sup>, and the following announcements of the Government policies related with COVID-19, had an impact in the sentiment of tweets and their volume: 
 
 - __Sentiment__: while the overall sentiment of tweets is positive, the announcement had different effect for the Government accounts. While the effect on [@Canada](https://twitter.com/canada?lang=en) account was a decrease in the average polarity, in the other hand we identify a rise in the positive sentiment of tweets related with the Canadian Prime Minister (which means an increase in the polarity levels of [@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) accounts). The [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) account was stable in polarity level before and after the announcement. 
 - __Volume__: we observed an increase in the total number of tweets and the average tweets per day. Also, the noncement affected the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes.
