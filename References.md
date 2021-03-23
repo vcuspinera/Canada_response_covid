@@ -21,6 +21,7 @@
 - [`spaCyTextBlob`](https://github.com/SamEdwardes/spaCyTextBlob)
 - [`textblob`](https://textblob.readthedocs.io/en/dev/)
 - [`wordcloud`](https://amueller.github.io/word_cloud/index.html)
+- [Altair's Color Schemes](https://vega.github.io/vega/docs/schemes/#reference)
 
 ### Other essentials about Twitter
 - [Standard search API](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets)
