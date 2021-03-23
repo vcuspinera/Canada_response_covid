@@ -127,7 +127,7 @@ To measure this impact we download tweets from February 1<sup>st</sup> to April 
 On the analysis we find that the announcement on March 11<sup>th</sup>, and the following announcements of the Government policies related with COVID-19, had an impact in the sentiment of tweets and their volume: 
 
 - __Sentiment__: while the overall sentiment of tweets is positive, the announcement had different effect for the Government accounts. While the effect on [@Canada](https://twitter.com/canada?lang=en) account was a decrease in the average polarity, in the other hand we identify a rise in the positive sentiment of tweets related with the Canadian Prime Minister (which means an increase in the polarity levels of [@CanadianPM](https://twitter.com/CanadianPM) and [@JustinTrudeau](https://twitter.com/JustinTrudeau?s=20) accounts). The [@GovCanHealth](https://twitter.com/govcanhealth?lang=en) account was stable in polarity level before and after the announcement. 
-- __Volume__: we observed an increase in the total number of tweets and the average tweets per day. Also, the noncement affected the volume of actions and reactions of users increasing the number of likes, replies, retweets and quotes.
+- __Volume__: we observed an increase in the total number of tweets and the average tweets per day. Also, the announcement affected the volume of actions and reactions of users increasing the volume of likes, replies, retweets and quotes.
 
 ## Dependencies
 |Python packages|Python packages|
