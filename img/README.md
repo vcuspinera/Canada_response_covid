@@ -1,3 +1,3 @@
 # Images
 
-In this folder we share imegaes used to render in the main Readme file of this project.
+In this folder we share images used to render in the main Readme file of this project.
